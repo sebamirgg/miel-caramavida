@@ -46,8 +46,9 @@
 }
 
 .studies__title {
-  margin: var(--space-8) 0 var(--space-6);
+  margin: var(--space-section) 0 var(--space-7);
   font-size: var(--text-2xl);
+  text-align: center;
 }
 
 .studies {

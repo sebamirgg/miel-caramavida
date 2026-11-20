@@ -40,13 +40,18 @@
   /* Honeycomb pattern (pointy-top hexagons, seamless tile 34.64 × 60) */
   --hex-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.64' height='60' viewBox='0 0 34.64 60'%3E%3Cpath d='M17.32 0 34.64 10v20L17.32 40 0 30V10zM17.32 40v20' fill='none' stroke='%23f0c560' stroke-opacity='.16' stroke-width='1'/%3E%3C/svg%3E");
   --hex-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.64' height='60' viewBox='0 0 34.64 60'%3E%3Cpath d='M17.32 0 34.64 10v20L17.32 40 0 30V10zM17.32 40v20' fill='none' stroke='%23a85a1c' stroke-opacity='.14' stroke-width='1'/%3E%3C/svg%3E");
+  /* Very subtle paper grain for cream surfaces. */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .24 0 0 0 0 .1 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   --hex-clip: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
   /* Typography */
-  /* Bodoni Moda (display, high contrast) + Jost (geometric, refined). Latin fonts go first
-     so CJK pages keep the Latin wordmark; CJK glyphs fall through to Noto (see :lang rules). */
-  --font-serif: 'Bodoni Moda', 'Didot', 'Bodoni 72', Georgia, serif;
-  --font-sans: 'Jost', 'Futura', 'Avenir Next', system-ui, sans-serif;
+  /* Cinzel: Roman inscriptional capitals for the wordmark and main titles.
+     Cormorant Garamond: subheadings, quotes and italics. Montserrat: body text.
+     Latin fonts go first so CJK pages keep the Latin wordmark; CJK glyphs fall
+     through to Noto (see :lang rules). */
+  --font-display: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', 'Cormorant', Georgia, serif;
+  --font-sans: 'Montserrat', 'Helvetica Neue', system-ui, sans-serif;
   --leading-body: 1.7;
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -54,7 +59,7 @@
   --text-lg: 1.125rem;
   --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
   --text-2xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
-  --text-3xl: clamp(2.25rem, 1.6rem + 2.6vw, 3.75rem);
+  --text-3xl: clamp(2rem, 1.4rem + 2.4vw, 3.4rem);
   --text-display: clamp(2.75rem, 1.6rem + 5vw, 6rem);
 
   /* Spacing & layout */
@@ -96,10 +101,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-bg);
+  background: var(--color-bg) var(--grain);
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: var(--text-base);
+  font-size: 0.97rem;
   font-weight: 400;
   line-height: var(--leading-body);
   -webkit-font-smoothing: antialiased;
@@ -112,9 +117,9 @@ h3,
 h4 {
   margin: 0;
   font-family: var(--font-serif);
-  font-weight: 400;
-  line-height: 1.12;
-  letter-spacing: -0.015em;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0;
   text-wrap: balance;
 }
 
@@ -206,7 +211,7 @@ textarea {
 }
 
 .section--alt {
-  background: var(--color-surface-alt);
+  background: var(--color-surface-alt) var(--grain);
 }
 
 .section--dark {
@@ -216,7 +221,29 @@ textarea {
 
 .section-header {
   max-width: 44rem;
-  margin-bottom: clamp(var(--space-7), 2rem + 3vw, 5rem);
+  margin-bottom: clamp(var(--space-7), 2rem + 4vw, 6rem);
+}
+
+/* Centered editorial header: eyebrow framed by two lines, hexagon divider. */
+.section-header--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-header--center .eyebrow::after {
+  content: '';
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.section-header--center .rule {
+  margin-inline: auto;
+}
+
+.section-header--center .section-intro {
+  max-width: 36rem;
+  margin-inline: auto;
 }
 
 .eyebrow {
@@ -244,13 +271,19 @@ textarea {
 }
 
 .section-title {
+  font-family: var(--font-display);
   font-size: var(--text-3xl);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.06em;
 }
 
 .section-intro {
   margin-top: var(--space-5);
   color: var(--color-text-muted);
   font-size: var(--text-lg);
+  font-weight: 300;
+  line-height: 1.75;
 }
 
 .section--dark .section-intro {
@@ -328,9 +361,9 @@ textarea {
   border: 1px solid transparent;
   border-radius: var(--radius);
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.2em;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
@@ -417,13 +450,15 @@ textarea {
 
 /* ---------- Chinese & Japanese ---------- */
 html:lang(zh) {
-  --font-serif: 'Bodoni Moda', 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
-  --font-sans: 'Jost', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-display: 'Cinzel', 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  --font-serif: 'Cormorant Garamond', 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  --font-sans: 'Montserrat', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 html:lang(ja) {
-  --font-serif: 'Bodoni Moda', 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
-  --font-sans: 'Jost', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  --font-display: 'Cinzel', 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --font-sans: 'Montserrat', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
 }
 
 html:is(:lang(zh), :lang(ja)) {
@@ -440,4 +475,14 @@ html:is(:lang(zh), :lang(ja)) :is(h1, h2, h3, h4, p, span, li, dd) {
 html:is(:lang(zh), :lang(ja)) :is(h1, h2, h3, h4) {
   letter-spacing: 0.02em;
   line-height: 1.35;
+}
+
+/* ---------- Gold frame for photographs ----------
+   Add class="framed" to <app-media>: a hairline gold border inset in the photo. */
+app-media.framed::after {
+  content: '';
+  position: absolute;
+  inset: 0.75rem;
+  border: 1px solid rgb(240 197 96 / 55%);
+  pointer-events: none;
 }

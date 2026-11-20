@@ -9,9 +9,9 @@
   gap: var(--space-5);
   height: 100%;
   padding: var(--space-6);
-  border: 1px solid rgb(252 248 239 / 18%);
-  border-radius: var(--radius-lg);
-  background: rgb(252 248 239 / 4%);
+  border: 1px solid rgb(240 197 96 / 22%);
+  border-radius: 0;
+  background: linear-gradient(160deg, rgb(240 197 96 / 7%), rgb(252 248 239 / 2%) 60%);
 }
 
 .study__title {

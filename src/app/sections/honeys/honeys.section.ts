@@ -10,9 +10,10 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
   template: `
     <section [id]="id" class="section section--alt honeycomb" tabindex="-1" aria-labelledby="honeys-title">
       <div class="container">
-        <header class="section-header" appReveal>
+        <header class="section-header section-header--center" appReveal>
           <p class="eyebrow">{{ t().honeys.eyebrow }}</p>
           <h2 id="honeys-title" class="section-title">{{ t().honeys.title }}</h2>
+          <hr class="rule" />
           <p class="section-intro">{{ t().honeys.intro }}</p>
         </header>
 

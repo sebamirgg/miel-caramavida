@@ -11,6 +11,15 @@
   isolation: isolate;
 }
 
+/* Thin gold frame around the hero, like a premium label. */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: calc(var(--header-height) + 1rem) clamp(0.75rem, 2vw, 1.5rem) clamp(0.75rem, 2vw, 1.5rem);
+  border: 1px solid rgb(240 197 96 / 22%);
+  pointer-events: none;
+}
+
 .hero__media {
   position: absolute;
   inset: 0;
@@ -62,23 +71,40 @@
 }
 
 .hero__brand {
-  font-size: clamp(2.3rem, 1.2rem + 5vw, 5.75rem);
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 1.1rem + 4.6vw, 5.25rem);
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   line-height: 1;
   text-transform: uppercase;
+  /* Champagne-to-honey sheen on the wordmark. */
+  background: linear-gradient(180deg, #fffaf0 0%, #fbe7bd 55%, var(--gold-300) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+@media (forced-colors: active) {
+  .hero__brand {
+    color: CanvasText;
+  }
 }
 
 .hero__tagline {
   color: var(--color-accent-on-dark);
-  font-size: var(--text-xl);
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem);
   font-style: italic;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .hero__lead {
   margin-top: var(--space-6);
   font-size: var(--text-lg);
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 .hero__statement {

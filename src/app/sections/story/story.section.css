@@ -19,8 +19,9 @@
 }
 
 .gallery__title {
-  margin: var(--space-section) 0 var(--space-6);
+  margin: var(--space-section) 0 var(--space-7);
   font-size: var(--text-2xl);
+  text-align: center;
 }
 
 /* Documentary gallery: simple columns keep each photo's own ratio. */

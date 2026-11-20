@@ -5,9 +5,8 @@
 }
 
 .value__item {
-  padding: var(--space-6);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-soft);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgb(168 90 28 / 35%);
 }
 
 .value__index {
@@ -48,6 +47,7 @@
 .ctas {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-3);
   margin-top: var(--space-7);
 }
