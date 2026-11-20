@@ -18,8 +18,8 @@
   z-index: -3;
   background-position: 60% 40%;
   background-size: cover;
-  filter: blur(80px) saturate(0.9);
-  opacity: 0.55;
+  filter: blur(80px) saturate(1);
+  opacity: 0.8;
 }
 
 /* Cream veil: calm, readable copy side (contrast stays AA) and a light band
@@ -37,14 +37,15 @@
 /* ----- Photograph (mobile: top band that melts into the copy below) ----- */
 .hero__visual {
   position: relative;
-  height: clamp(24rem, 62svh, 36rem);
+  height: clamp(22rem, 56svh, 34rem);
+  margin-top: var(--header-height);
 }
 
 .hero__photo {
   /* Read by the global `app-media.melt img` rule: fade only the image.
      Framing keeps the beekeeper and the hive tower in view. */
   --melt-position: 42% 35%;
-  --melt-mask: linear-gradient(180deg, transparent 0, #000 18%, #000 66%, transparent 100%);
+  --melt-mask: linear-gradient(180deg, transparent 0, #000 2.5rem, #000 72%, transparent 100%);
 }
 
 .hero__seal {
@@ -128,7 +129,7 @@
   .hero__veil {
     background:
       linear-gradient(180deg, rgb(250 246 240 / 75%) 0, transparent 7rem),
-      linear-gradient(90deg, rgb(250 246 240 / 95%) 0%, rgb(250 246 240 / 90%) 42%, rgb(250 246 240 / 30%) 62%, rgb(250 246 240 / 0%) 80%),
+      linear-gradient(90deg, rgb(250 246 240 / 95%) 0%, rgb(250 246 240 / 90%) 48%, rgb(250 246 240 / 35%) 64%, rgb(250 246 240 / 0%) 80%),
       var(--grain);
   }
 
@@ -137,13 +138,14 @@
     inset: 0 0 0 auto;
     width: 62%;
     height: auto;
+    margin-top: 0;
   }
 
   .hero__photo {
     /* Dissolves towards the copy, the header and the next section. */
     --melt-mask:
-      linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 60%) 14%, #000 30%),
-      linear-gradient(180deg, transparent 0, #000 16%, #000 84%, transparent 100%);
+      linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 45%) 12%, rgb(0 0 0 / 85%) 22%, #000 30%),
+      linear-gradient(180deg, transparent 0, rgb(0 0 0 / 60%) calc(var(--header-height) * 0.8), #000 calc(var(--header-height) + 2rem), #000 76%, transparent 100%);
   }
 
   .hero__photo {
