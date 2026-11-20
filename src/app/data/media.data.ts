@@ -16,6 +16,8 @@ export interface MediaCredit {
   license: string;
   licenseUrl: string;
   sourceUrl: string;
+  /** The image was modified (e.g. cropped); licences such as CC BY require saying so. */
+  adapted?: boolean;
 }
 
 export interface MediaAsset {
@@ -35,7 +37,6 @@ export interface HeroMedia extends MediaAsset {
 export const pending = (width: number, height: number): MediaAsset => ({ src: null, width, height });
 
 const CC_BY_2 = { license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0' };
-const CC_BY_4 = { license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0' };
 const CC_BY_SA_4 = { license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' };
 const COMMONS = 'https://commons.wikimedia.org/wiki/File:';
 
@@ -54,14 +55,19 @@ const example = (
   credit: { author, ...license, sourceUrl: COMMONS + commonsFile },
 });
 
-// [PENDIENTE: video y fotografía propios para el hero]
+// Client's own photograph (Bosques y Praderas). Its colours also tint the hero's blurred backdrop.
 const hero: HeroMedia = {
-  ...example(
-    'hero-nahuelbuta-araucaria.jpg', 2000, 1333, 'Gonzalo Palacios', CC_BY_SA_4,
-    'Parque_Nacional_Nahuelbuta,_puesta_de_sol,_araucaria_2.jpg',
-  ),
+  src: 'images/cliente/apicultor-colmenas.jpg',
+  width: 2048,
+  height: 1361,
   videoSrc: null,
 };
+
+// Example photo, cropped from the original to exclude third-party product labels.
+const dipperPhoto = example(
+  'miel-panal-cuchara.jpg', 1200, 1717, 'Shixart1985', CC_BY_2,
+  'Dipper_stick_and_honey_in_a_jar.jpg',
+);
 
 export const MEDIA = {
   hero,
@@ -77,13 +83,9 @@ export const MEDIA = {
       'Weinmannia_trichosperma_(8661827098).jpg',
     ),
   },
-  /** [PENDIENTE: 6 fotografías documentales propias, mismo orden que `story.gallery` en i18n] */
+  /** [PENDIENTE: 4 fotografías documentales propias, mismo orden que `story.gallery` en i18n] */
   gallery: [
     example('apicultor-colmena.jpg', 1400, 934, 'Tasmanianbeekeepers', CC_BY_SA_4, 'Frame_Honey_Comb.jpg'),
-    example(
-      'ulmo-flor.jpg', 1200, 798, 'Cristian Ordenes', CC_BY_2,
-      'Eucryphia_cordifolia_Flor_del_ulmo_(RastaChango).jpg',
-    ),
     example(
       'tineo-follaje.jpg', 1200, 800, 'Krzysztof Ziarnek, Kenraiz', CC_BY_SA_4,
       'Weinmannia_trichosperma_kz02.jpg',
@@ -92,12 +94,21 @@ export const MEDIA = {
       'araucarias-nahuelbuta.jpg', 1600, 900, 'Gnzlndrs', CC_BY_SA_4,
       'Araucarias_en_el_Parque_Nacional_Nahuelbuta.jpg',
     ),
-    example('desoperculado.jpg', 760, 1200, 'Wyatt Tyrone Smith', CC_BY_SA_4, 'Uncapping_honeycomb.jpg'),
-    example('panal-operculado.jpg', 1200, 900, 'Einebillion', CC_BY_4, 'Honey_comb_with_capped_honey.jpg'),
+    example(
+      'hero-nahuelbuta-araucaria.jpg', 2000, 1333, 'Gonzalo Palacios', CC_BY_SA_4,
+      'Parque_Nacional_Nahuelbuta,_puesta_de_sol,_araucaria_2.jpg',
+    ),
   ] as readonly MediaAsset[],
-  // [PENDIENTE: fotografía propia de paisaje para la sección de territorio]
+  // [PENDIENTE: fotografía propia de paisaje para la sección de origen]
   origin: example(
     'territorio-nahuelbuta.jpg', 2000, 1333, 'Gonzalo Palacios', CC_BY_SA_4,
     'Parque_Nacional_Nahuelbuta,_puesta_de_sol,_Cordillera_de_Nahuelbuta.jpg',
   ),
+  // [PENDIENTE: fotografía propia de flor de ulmo para la sección de origen]
+  originFlower: example(
+    'ulmo-flor.jpg', 1200, 798, 'Cristian Ordenes', CC_BY_2,
+    'Eucryphia_cordifolia_Flor_del_ulmo_(RastaChango).jpg',
+  ),
+  // [PENDIENTE: fotografía propia para la guía de rituales (miel servida, panal)]
+  rituals: { ...dipperPhoto, credit: dipperPhoto.credit && { ...dipperPhoto.credit, adapted: true } },
 };

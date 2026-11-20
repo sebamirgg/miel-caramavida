@@ -96,11 +96,30 @@ y confirmación. El fallback `mailto:` aparece en cuanto se define `contact.emai
   que se cierra con Escape. Al navegar por anclas, el foco se mueve a la sección.
 - Animaciones de entrada sutiles, desactivadas con `prefers-reduced-motion`. Sin JavaScript, todo el contenido es visible.
 
+## Contenido marcado «Ejemplo» (confirmar antes de publicar)
+
+Estos textos del rediseño son ilustrativos. Aparecen con una etiqueta «Ejemplo» y una nota al pie
+porque son afirmaciones de producto con peso comercial y legal (importadores UE). El productor debe
+confirmarlos o reemplazarlos; luego basta con quitar la etiqueta.
+
+- **Credenciales** (`credentials.items`, campo `example: true`): «Sin filtrar en caliente», «Cosecha responsable»,
+  «Cristalización natural». «Flora nativa de Nahuelbuta» no está marcada (es el origen).
+- **Fichas de miel** (`honeys.items`): notas de cata, nivel de intensidad (1–5) y textura de Ulmo y Tineo.
+  La etiqueta se muestra en `shared/components/honey-card`.
+- **Imágenes de ejemplo** (`data/media.data.ts`): fotos de Wikimedia Commons con licencia libre y crédito visible.
+  Hay que reemplazarlas por fotografía propia (hero, fichas, origen, rituales y galería).
+
+Otras notas del rediseño:
+- El sello del hero dice «Bosque nativo · Nahuelbuta · Chile» (verificable), no «100% Cruda».
+- El formulario de contacto sigue oculto. Todos los CTA llevan a la sección **Alianzas**. Para reactivarlo,
+  descomentar el bloque en `partnerships.section.html` y volver a importar `ContactFormComponent`.
+- Las traducciones al alemán, chino y japonés necesitan revisión de un hablante nativo.
+
 ## Lista de `[PENDIENTE]` para el cliente
 
 **Identidad y medios**
-- [ ] Logo definitivo (SVG) → hoy es un logotipo tipográfico en `layout/site-header` · favicon (`public/favicon.ico`)
-- [ ] Video y póster del hero · foto de paisaje del territorio
+- [x] Logo de Bosques & Praderas (header y footer, `public/images/marca/`), recortado del JPG original en dos versiones PNG transparentes. [PENDIENTE: versión vectorial (SVG) para máxima nitidez] · favicon (`public/favicon.ico`)
+- [x] Foto del hero: fotografía propia del cliente (`public/images/cliente/apicultor-colmenas.jpg`) · [ ] foto de paisaje del territorio
 - [ ] Fotos de producto: frasco de Ulmo y de Tineo
 - [ ] 6 fotografías documentales (apicultor, flor de Ulmo, flor de Tineo, paisaje, cosecha, equipo)
 - [ ] Imagen para compartir en redes (Open Graph, 1200×630) → `site.config.ts › ogImage`

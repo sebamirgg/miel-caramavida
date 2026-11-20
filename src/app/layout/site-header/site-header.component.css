@@ -3,19 +3,28 @@
   inset: 0 0 auto;
   z-index: 50;
   height: var(--header-height);
-  color: var(--color-text-on-dark);
-  border-bottom: 1px solid rgb(240 197 96 / 14%);
+  color: var(--bark);
 }
 
-/* The blur lives on a pseudo-element: backdrop-filter on .header itself would
-   turn it into the containing block of the fixed mobile menu and clip it. */
+/* Frosted glass layer. On a pseudo-element: backdrop-filter on .header itself
+   would become the containing block of the fixed mobile menu and clip it. */
 .header::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: rgb(31 21 12 / 94%);
-  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  background: rgb(250 246 240 / 0%);
+  transition:
+    background-color 0.6s var(--ease),
+    border-color 0.6s var(--ease),
+    backdrop-filter 0.6s var(--ease);
+}
+
+.header.is-scrolled::before {
+  border-bottom-color: rgb(166 104 26 / 14%);
+  background: rgb(250 246 240 / 76%);
+  backdrop-filter: blur(14px) saturate(1.2);
 }
 
 .header__bar {
@@ -26,27 +35,23 @@
   height: 100%;
 }
 
+/* ----- Brand ----- */
 .brand {
   display: flex;
-  flex-direction: column;
-  line-height: 1;
+  align-items: center;
+  height: 100%;
+  padding-block: 0.5rem;
   text-decoration: none;
 }
 
-.brand__name {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+.brand__logo {
+  width: auto;
+  height: 100%;
+  transition: transform 0.6s var(--ease);
 }
 
-.brand__tagline {
-  margin-top: 0.3rem;
-  color: var(--color-accent-on-dark);
-  font-size: 0.625rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
+.brand:hover .brand__logo {
+  transform: scale(1.03);
 }
 
 /* ----- Mobile toggle ----- */
@@ -64,10 +69,10 @@
 .menu-toggle__icon::before,
 .menu-toggle__icon::after {
   display: block;
-  width: 1.375rem;
+  width: 1.4rem;
   height: 1.5px;
   background: currentColor;
-  transition: transform 0.3s var(--ease), background-color 0.3s var(--ease);
+  transition: transform 0.5s var(--ease), background-color 0.5s var(--ease);
 }
 
 .menu-toggle__icon {
@@ -82,11 +87,11 @@
 }
 
 .menu-toggle__icon::before {
-  top: -7px;
+  top: -6px;
 }
 
 .menu-toggle__icon::after {
-  top: 7px;
+  top: 6px;
 }
 
 .menu-toggle__icon.is-open {
@@ -94,11 +99,11 @@
 }
 
 .menu-toggle__icon.is-open::before {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .menu-toggle__icon.is-open::after {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* ----- Navigation: mobile panel ----- */
@@ -110,7 +115,8 @@
   gap: var(--space-7);
   padding: var(--space-7) var(--gutter);
   overflow-y: auto;
-  background: var(--brown-900);
+  background: var(--hex-light), var(--parchment);
+  background-size: 46px 80px, auto;
 }
 
 .nav.is-open {
@@ -119,7 +125,7 @@
 
 .nav__list {
   display: grid;
-  gap: var(--space-2);
+  gap: var(--space-1);
   list-style: none;
 }
 
@@ -129,10 +135,6 @@
   font-family: var(--font-serif);
   font-size: var(--text-2xl);
   text-decoration: none;
-}
-
-.nav__link:hover {
-  color: var(--color-accent-on-dark);
 }
 
 .nav__aside {
@@ -162,31 +164,26 @@
 
   .nav__list {
     display: flex;
-    gap: var(--space-5);
+    gap: 1.6rem;
   }
 
   .nav__link {
     position: relative;
     font-family: var(--font-sans);
-    font-size: 0.8125rem;
-    letter-spacing: 0.08em;
-    opacity: 0.82;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
   }
 
-  /* Gold underline that grows from the centre. */
+  /* Amber underline that flows in from the centre. */
   .nav__link::after {
     content: '';
     position: absolute;
-    inset: auto 0 0.15rem;
+    inset: auto 0 0.2rem;
     height: 1px;
-    background: var(--gold-300);
+    background: var(--amber);
     transform: scaleX(0);
-    transition: transform 0.35s var(--ease);
-  }
-
-  .nav__link:hover {
-    color: inherit;
-    opacity: 1;
+    transition: transform 0.6s var(--ease);
   }
 
   .nav__link:hover::after {

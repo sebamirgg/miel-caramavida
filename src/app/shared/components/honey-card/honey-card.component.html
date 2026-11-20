@@ -1,15 +1,48 @@
 <article class="card" [attr.aria-labelledby]="headingId()">
-  <app-media class="card__media framed" [asset]="visual().image" [alt]="honey().imageAlt" [tone]="id()" ratio="4 / 3" />
+  <div class="card__visual">
+    <app-media class="card__media framed" [asset]="visual().image" [alt]="honey().imageAlt" [tone]="id()" ratio="4 / 3" />
+    <span class="card__seal" aria-hidden="true">{{ honey().tree }}</span>
+  </div>
 
   <div class="card__body">
-    <p class="card__tree">{{ honey().tree }}</p>
-    <h3 class="card__name" [id]="headingId()">{{ honey().name }}</h3>
-    <p class="card__description">{{ honey().description }}</p>
+    <header class="card__head">
+      <p class="card__species">{{ honey().species }}</p>
+      <h3 class="card__name" [id]="headingId()">{{ honey().name }}</h3>
+      <p class="card__description">{{ honey().description }}</p>
+    </header>
+
+    <!-- Tasting notes -->
+    <figure class="card__notes">
+      <figcaption class="card__label">
+        {{ labels().notes }} <span class="example-tag">{{ t().a11y.exampleTag }}</span>
+      </figcaption>
+      <blockquote>{{ honey().notes }}</blockquote>
+    </figure>
+
+    <!-- Intensity: five honey cells -->
+    <div class="card__intensity">
+      <p class="card__label">
+        {{ labels().intensity }} <span class="example-tag">{{ t().a11y.exampleTag }}</span>
+      </p>
+      <p class="intensity">
+        <span class="intensity__cells" aria-hidden="true">
+          @for (step of steps; track step) {
+            <span class="intensity__cell" [class.is-on]="step <= honey().intensity"></span>
+          }
+        </span>
+        <span class="intensity__value">{{ honey().intensityLabel }}</span>
+        <span class="visually-hidden">({{ honey().intensity }} {{ t().a11y.intensityOf }})</span>
+      </p>
+    </div>
 
     <dl class="card__facts">
       <div>
-        <dt>{{ labels().species }}</dt>
-        <dd class="card__species">{{ honey().species }}</dd>
+        <dt>{{ labels().texture }} <span class="example-tag">{{ t().a11y.exampleTag }}</span></dt>
+        <dd>{{ honey().texture }}</dd>
+      </div>
+      <div>
+        <dt>{{ labels().format }}</dt>
+        <dd>{{ honey().format }}</dd>
       </div>
       <div>
         <dt>{{ labels().flowering }}</dt>
@@ -19,12 +52,22 @@
         <dt>{{ labels().origin }}</dt>
         <dd>{{ honey().origin }}</dd>
       </div>
-      <div>
+      <div class="card__fact--wide">
         <dt>{{ labels().sensory }}</dt>
         <dd>{{ honey().sensory }}</dd>
       </div>
     </dl>
 
-    <p class="card__availability">{{ availability() }}</p>
+    <footer class="card__footer">
+      <p class="card__availability">{{ availability() }}</p>
+      <app-cta-link
+        class="card__cta"
+        [label]="t().cta.requestSample"
+        [fragment]="partnershipsId"
+        variant="accent"
+        intent="samples"
+        [block]="true"
+      />
+    </footer>
   </div>
 </article>

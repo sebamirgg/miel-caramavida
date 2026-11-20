@@ -22,53 +22,71 @@
     "closeMenu": "Close menu",
     "languageSelector": "Select language",
     "changeLanguage": "Change language",
-    "homeLink": "Caramávida, back to top",
+    "homeLink": "Bosques & Praderas, back to top",
     "currentLanguage": "current language",
     "pendingImage": "Image pending",
     "exampleImage": "Example image",
-    "photoCredit": "Photo"
+    "photoCredit": "Photo",
+    "exampleTag": "Example",
+    "exampleNote": "Content marked “Example” is illustrative and pending confirmation by the producer.",
+    "intensityOf": "of 5",
+    "adapted": "adapted"
   },
   "nav": {
-    "home": "Home",
-    "origin": "The Origin",
     "honeys": "Our Honeys",
-    "science": "Science & Quality",
-    "story": "Our Story",
-    "partnerships": "Partnerships"
+    "origin": "Origin",
+    "science": "Science",
+    "story": "Story",
+    "rituals": "Rituals",
+    "partnerships": "Partnerships",
+    "faq": "FAQ"
   },
   "cta": {
     "requestDossier": "Request dossier",
     "becomeDistributor": "Become a distributor",
     "requestCommercialDossier": "Request trade dossier",
     "contactSales": "Contact our sales team",
-    "requestSamples": "Request samples"
+    "requestSamples": "Request samples",
+    "exploreHarvest": "Explore the harvest",
+    "requestSample": "Request a sample"
   },
   "hero": {
-    "eyebrow": "Ulmo & Tineo honeys · Chile",
-    "lead": "Exceptional honeys from the native forests of southern Chile.",
+    "eyebrow": "Caramávida Honey · Southern Chile",
+    "lead": "Native-flora honey, artisanally harvested in Caramávida, where the ancient forest still sets the rhythm of the bees.",
     "statement": "A unique territory. An extraordinary flora. Ulmo and Tineo honeys whose singularity we investigate through science.",
-    "honeysIntro": "Ulmo and Tineo: two native trees, two blossoms, two honeys with a character of their own, harvested in Caramávida, in the Nahuelbuta range.",
-    "mediaLabel": "Example image: araucaria tree at sunset in the Nahuelbuta range",
-    "pillarsTitle": "Our pillars",
-    "pillars": [
+    "mediaLabel": "Beekeeper beside the Bosques y Praderas hives",
+    "title": "The silent gold of the Nahuelbuta Range",
+    "seal": "Native forest · Nahuelbuta · Chile"
+  },
+  "credentials": {
+    "title": "Origin & purity credentials",
+    "items": [
       {
-        "title": "Territory",
-        "text": "Caramávida, Nahuelbuta range, Arauco Province. A precise, well-defined origin."
+        "title": "Not heat-filtered",
+        "text": "Extracted and packed without exposure to high temperatures.",
+        "example": true
       },
       {
-        "title": "Botanical singularity",
-        "text": "Nectar from native species of southern Chile's temperate forest."
+        "title": "Native Nahuelbuta flora",
+        "text": "Nectar from ulmo, tineo and other native forest species.",
+        "example": false
       },
       {
-        "title": "Research",
-        "text": "We study the composition of our honeys together with Universidad de La Frontera (UFRO)."
+        "title": "Responsible harvest",
+        "text": "Only the surplus is harvested, respecting each hive’s reserves.",
+        "example": true
+      },
+      {
+        "title": "Natural crystallisation",
+        "text": "It crystallises naturally over time, with no additives.",
+        "example": true
       }
     ]
   },
   "origin": {
-    "eyebrow": "01 — Nahuelbuta",
-    "title": "The Origin",
-    "intro": "Caramávida lies in the Nahuelbuta range, part of Chile's Coastal Mountain Range in the Province of Arauco, southern Chile. Here, native forest still shapes the landscape and the rhythm of the year.",
+    "eyebrow": "02 — The Origin",
+    "title": "Where the bee meets the forest",
+    "intro": "On the slopes of Nahuelbuta, among centuries-old araucarias, ulmos and tineos, our bees forage in one of southern Chile’s most remarkable native forests.",
     "body": "[PENDING: final text about Caramávida — approximate altitude, dominant forest type, climate and relationship with local communities. Avoid unverified figures.]",
     "landscapeAlt": "Example image: sunset over the Nahuelbuta range",
     "features": [
@@ -94,17 +112,27 @@
       "zone": "Caramávida",
       "country": "Chile",
       "caption": "Illustrative map, not to scale. Apiary locations are not shown."
-    }
+    },
+    "story": [
+      "Every summer, when the ulmo covers the forest in white blossoms and the tineo unfurls its spikes, the hives work to the rhythm of a brief, unrepeatable bloom.",
+      "Caramávida lies in the Nahuelbuta range, in the Province of Arauco. A precise territory that shapes the character of every harvest."
+    ],
+    "quote": "The forest sets the pace; we simply follow it.",
+    "flowerAlt": "Example image: ulmo flowers"
   },
   "honeys": {
-    "eyebrow": "02 — Our Honeys",
+    "eyebrow": "01 — Our Honeys",
     "title": "Our Honeys",
     "intro": "Two monofloral honeys from a single territory, each with its own botanical and sensory identity.",
     "labels": {
       "species": "Botanical species",
       "flowering": "Flowering season",
       "origin": "Origin",
-      "sensory": "Sensory profile"
+      "sensory": "Sensory profile",
+      "format": "Format",
+      "intensity": "Intensity",
+      "notes": "Tasting notes",
+      "texture": "Texture"
     },
     "availability": "Commercial availability subject to confirmation.",
     "items": [
@@ -117,7 +145,12 @@
         "origin": "Caramávida, Nahuelbuta range, Arauco Province, Chile",
         "sensory": "[PENDING: validated sensory profile — colour, aroma, flavour and texture]",
         "description": "[PENDING: short introduction to Ulmo honey]",
-        "imageAlt": "Example image: honeybee on an ulmo flower"
+        "imageAlt": "Example image: honeybee on an ulmo flower",
+        "format": "[PENDING: available formats and weights]",
+        "intensity": 2,
+        "intensityLabel": "Delicate",
+        "notes": "Floral and luminous, with hints of jasmine and a soft vanilla finish.",
+        "texture": "Creamy"
       },
       {
         "id": "tineo",
@@ -128,12 +161,17 @@
         "origin": "Caramávida, Nahuelbuta range, Arauco Province, Chile",
         "sensory": "[PENDING: validated sensory profile — colour, aroma, flavour and texture]",
         "description": "[PENDING: short introduction to Tineo honey]",
-        "imageAlt": "Example image: tineo flowers"
+        "imageAlt": "Example image: tineo flowers",
+        "format": "[PENDING: available formats and weights]",
+        "intensity": 4,
+        "intensityLabel": "Deep",
+        "notes": "Herbal and deep, with notes of damp wood and a caramel finish.",
+        "texture": "Liquid, crystallises over time"
       }
     ]
   },
   "science": {
-    "eyebrow": "03 — Science & Quality",
+    "eyebrow": "04 — Science & Quality",
     "title": "Science & Quality",
     "intro": "We want the singularity of our honeys to be demonstrated, not just described.",
     "bioactivityTitle": "What is bioactivity?",
@@ -177,7 +215,7 @@
     ]
   },
   "story": {
-    "eyebrow": "04 — Our Story",
+    "eyebrow": "03 — Our Story",
     "title": "Our Story",
     "intro": "Bosques y Praderas is the company behind Caramávida. [PENDING: company origin, founding year and motivation]",
     "blocks": [
@@ -201,15 +239,41 @@
     "galleryTitle": "Documentary record",
     "gallery": [
       "Example image: beekeeper inspecting a hive",
-      "Example image: ulmo flowers",
       "Example image: tineo foliage",
       "Example image: araucaria trees in the Nahuelbuta range",
-      "Example image: uncapping a honey frame",
-      "Example image: comb with capped honey"
+      "Example image: araucaria tree at sunset in the Nahuelbuta range"
     ]
   },
+  "rituals": {
+    "eyebrow": "05 — Rituals",
+    "title": "How to enjoy it",
+    "intro": "A native-forest honey deserves time. A few ideas to discover it.",
+    "items": [
+      {
+        "title": "With aged cheeses",
+        "text": "A drizzle over cured or blue cheeses balances the salt and lifts the aromas."
+      },
+      {
+        "title": "Mountain infusions",
+        "text": "Gently sweetens a herbal infusion without masking its character. Add it once the drink is warm."
+      },
+      {
+        "title": "Sourdough bread",
+        "text": "On warm toast, with butter and a pinch of flaky salt."
+      },
+      {
+        "title": "Chef’s kitchen",
+        "text": "Glazes, vinaigrettes and desserts that call for a sweetness with identity."
+      },
+      {
+        "title": "By the spoonful, slowly",
+        "text": "The purest way to discover its notes: at room temperature, straight from the spoon."
+      }
+    ],
+    "imageAlt": "Example image: honeycomb with honey and a honey dipper on wood"
+  },
   "partnerships": {
-    "eyebrow": "05 — Trade & Partnerships",
+    "eyebrow": "06 — Trade & Partnerships",
     "title": "International Partnerships",
     "intro": "We are looking for importers, distributors and agents who value origin, authenticity and evidence.",
     "valueTitle": "Value proposition",
@@ -241,6 +305,36 @@
     "markets": [
       "European Union",
       "[PENDING: other priority markets]"
+    ]
+  },
+  "faq": {
+    "eyebrow": "07 — FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Why does honey crystallise?",
+        "a": "Crystallisation is a natural process in honey. It mainly depends on the ratio of glucose to fructose and on temperature, and it does not affect quality. [PENDING: specific behaviour of Ulmo and Tineo]"
+      },
+      {
+        "q": "How should I store it?",
+        "a": "Tightly closed, in a dry place at room temperature and away from direct light. To make it liquid again, warm it gently in a water bath at a moderate temperature. [PENDING: maximum temperature recommended by the producer]"
+      },
+      {
+        "q": "Do you export?",
+        "a": "We work with importers and distributors. Export terms, Incoterms and lead times are agreed case by case. [PENDING: approved markets and export certifications]"
+      },
+      {
+        "q": "Can I request samples?",
+        "a": "Yes, from the Partnerships section. [PENDING: sample shipping conditions]"
+      },
+      {
+        "q": "How do Ulmo and Tineo differ?",
+        "a": "They come from the blossoms of two different native trees, so their colour, aroma and texture differ. You will find each profile under Our Honeys."
+      },
+      {
+        "q": "What is the NBI index?",
+        "a": "It is a proprietary index in development that we use to characterise our honeys. It is not a standardised scale and is not equivalent to other international scales."
+      }
     ]
   },
   "contact": {
@@ -312,6 +406,8 @@
     "sectionsTitle": "Sections",
     "languageTitle": "Language",
     "privacy": "Privacy policy",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "seal": "Caramávida · Nahuelbuta · Chile",
+    "closing": "Patiently harvested at the southern end of the world."
   }
 }

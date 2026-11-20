@@ -22,53 +22,71 @@
     "closeMenu": "Menü schließen",
     "languageSelector": "Sprache auswählen",
     "changeLanguage": "Sprache ändern",
-    "homeLink": "Caramávida, zurück zum Anfang",
+    "homeLink": "Bosques & Praderas, zurück zum Anfang",
     "currentLanguage": "aktuelle Sprache",
     "pendingImage": "Bild ausstehend",
     "exampleImage": "Beispielbild",
-    "photoCredit": "Foto"
+    "photoCredit": "Foto",
+    "exampleTag": "Beispiel",
+    "exampleNote": "Mit „Beispiel“ gekennzeichnete Inhalte dienen der Veranschaulichung und müssen vom Erzeuger noch bestätigt werden.",
+    "intensityOf": "von 5",
+    "adapted": "bearbeitet"
   },
   "nav": {
-    "home": "Start",
-    "origin": "Herkunft",
     "honeys": "Unsere Honige",
-    "science": "Wissenschaft & Qualität",
-    "story": "Unsere Geschichte",
-    "partnerships": "Partnerschaften"
+    "origin": "Herkunft",
+    "science": "Wissenschaft",
+    "story": "Geschichte",
+    "rituals": "Rituale",
+    "partnerships": "Partnerschaften",
+    "faq": "FAQ"
   },
   "cta": {
     "requestDossier": "Dossier anfordern",
     "becomeDistributor": "Distributor werden",
     "requestCommercialDossier": "Handelsdossier anfordern",
     "contactSales": "Vertriebsteam kontaktieren",
-    "requestSamples": "Muster anfordern"
+    "requestSamples": "Muster anfordern",
+    "exploreHarvest": "Die Ernte entdecken",
+    "requestSample": "Muster anfordern"
   },
   "hero": {
-    "eyebrow": "Ulmo- & Tineo-Honig · Chile",
-    "lead": "Außergewöhnliche Honige aus den Urwäldern Südchiles.",
+    "eyebrow": "Caramávida Honig · Südchile",
+    "lead": "Honig aus heimischer Flora, handwerklich geerntet in Caramávida, wo der alte Wald noch immer den Rhythmus der Bienen bestimmt.",
     "statement": "Ein einzigartiges Gebiet. Eine außergewöhnliche Flora. Ulmo- und Tineo-Honige, deren Besonderheit wir wissenschaftlich erforschen.",
-    "honeysIntro": "Ulmo und Tineo: zwei heimische Bäume, zwei Blüten, zwei Honige mit eigenem Charakter – geerntet in Caramávida, im Nahuelbuta-Gebirge.",
-    "mediaLabel": "Beispielbild: Araukarie bei Sonnenuntergang im Nahuelbuta-Gebirge",
-    "pillarsTitle": "Unsere Säulen",
-    "pillars": [
+    "mediaLabel": "Imker neben den Bienenstöcken von Bosques y Praderas",
+    "title": "Das stille Gold des Nahuelbuta-Gebirges",
+    "seal": "Heimischer Wald · Nahuelbuta · Chile"
+  },
+  "credentials": {
+    "title": "Herkunft & Reinheit",
+    "items": [
       {
-        "title": "Herkunft",
-        "text": "Caramávida, Nahuelbuta-Gebirge, Provinz Arauco. Ein präziser, klar abgegrenzter Ursprung."
+        "title": "Nicht heiß gefiltert",
+        "text": "Ohne hohe Temperaturen geschleudert und abgefüllt.",
+        "example": true
       },
       {
-        "title": "Botanische Einzigartigkeit",
-        "text": "Nektar heimischer Arten des gemäßigten Regenwalds Südchiles."
+        "title": "Heimische Flora aus Nahuelbuta",
+        "text": "Nektar von Ulmo, Tineo und weiteren Arten des heimischen Waldes.",
+        "example": false
       },
       {
-        "title": "Forschung",
-        "text": "Wir untersuchen die Zusammensetzung unserer Honige gemeinsam mit der Universidad de La Frontera (UFRO)."
+        "title": "Verantwortungsvolle Ernte",
+        "text": "Geerntet wird nur der Überschuss – die Vorräte jedes Volkes bleiben erhalten.",
+        "example": true
+      },
+      {
+        "title": "Natürliche Kristallisation",
+        "text": "Kristallisiert mit der Zeit auf natürliche Weise, ohne Zusätze.",
+        "example": true
       }
     ]
   },
   "origin": {
-    "eyebrow": "01 — The Origin",
-    "title": "Unsere Herkunft",
-    "intro": "Caramávida liegt im Nahuelbuta-Gebirge, einem Teil der chilenischen Küstenkordillere in der Provinz Arauco im Süden Chiles. Hier prägt der heimische Wald noch immer die Landschaft und den Rhythmus des Jahres.",
+    "eyebrow": "02 — The Origin",
+    "title": "Wo die Biene den Wald kennt",
+    "intro": "An den Hängen des Nahuelbuta, zwischen jahrhundertealten Araukarien, Ulmos und Tineos, sammeln unsere Bienen in einem der außergewöhnlichsten Urwälder Südchiles.",
     "body": "[AUSSTEHEND: endgültiger Text über Caramávida — ungefähre Höhenlage, vorherrschender Waldtyp, Klima und Beziehung zu den lokalen Gemeinschaften. Keine unbestätigten Zahlen.]",
     "landscapeAlt": "Beispielbild: Sonnenuntergang über dem Nahuelbuta-Gebirge",
     "features": [
@@ -94,17 +112,27 @@
       "zone": "Caramávida",
       "country": "Chile",
       "caption": "Illustrative Karte, nicht maßstabsgetreu. Standorte der Bienenstände werden nicht angezeigt."
-    }
+    },
+    "story": [
+      "Jeden Sommer, wenn der Ulmo den Wald mit weißen Blüten bedeckt und der Tineo seine Ähren entfaltet, arbeiten die Völker im Takt einer kurzen, unwiederholbaren Blüte.",
+      "Caramávida liegt im Nahuelbuta-Gebirge in der Provinz Arauco. Ein präzises Gebiet, das den Charakter jeder Ernte prägt."
+    ],
+    "quote": "Der Wald gibt den Takt vor; wir folgen ihm nur.",
+    "flowerAlt": "Beispielbild: Ulmo-Blüten"
   },
   "honeys": {
-    "eyebrow": "02 — Our Honeys",
+    "eyebrow": "01 — Our Honeys",
     "title": "Unsere Honige",
     "intro": "Zwei Sortenhonige aus einem einzigen Gebiet, jeder mit eigener botanischer und sensorischer Identität.",
     "labels": {
       "species": "Botanische Art",
       "flowering": "Blütezeit",
       "origin": "Herkunft",
-      "sensory": "Sensorisches Profil"
+      "sensory": "Sensorisches Profil",
+      "format": "Format",
+      "intensity": "Intensität",
+      "notes": "Verkostungsnotizen",
+      "texture": "Textur"
     },
     "availability": "Kommerzielle Verfügbarkeit vorbehaltlich Bestätigung.",
     "items": [
@@ -117,7 +145,12 @@
         "origin": "Caramávida, Nahuelbuta-Gebirge, Provinz Arauco, Chile",
         "sensory": "[AUSSTEHEND: geprüftes sensorisches Profil — Farbe, Aroma, Geschmack und Textur]",
         "description": "[AUSSTEHEND: kurze Vorstellung des Ulmo-Honigs]",
-        "imageAlt": "Beispielbild: Honigbiene auf einer Ulmo-Blüte"
+        "imageAlt": "Beispielbild: Honigbiene auf einer Ulmo-Blüte",
+        "format": "[AUSSTEHEND: verfügbare Formate und Gewichte]",
+        "intensity": 2,
+        "intensityLabel": "Zart",
+        "notes": "Blumig und hell, mit Anklängen von Jasmin und einem sanften Vanille-Abgang.",
+        "texture": "Cremig"
       },
       {
         "id": "tineo",
@@ -128,12 +161,17 @@
         "origin": "Caramávida, Nahuelbuta-Gebirge, Provinz Arauco, Chile",
         "sensory": "[AUSSTEHEND: geprüftes sensorisches Profil — Farbe, Aroma, Geschmack und Textur]",
         "description": "[AUSSTEHEND: kurze Vorstellung des Tineo-Honigs]",
-        "imageAlt": "Beispielbild: Tineo-Blüten"
+        "imageAlt": "Beispielbild: Tineo-Blüten",
+        "format": "[AUSSTEHEND: verfügbare Formate und Gewichte]",
+        "intensity": 4,
+        "intensityLabel": "Tief",
+        "notes": "Kräuterig und tief, mit Noten von feuchtem Holz und einem karamelligen Abgang.",
+        "texture": "Flüssig, kristallisiert mit der Zeit"
       }
     ]
   },
   "science": {
-    "eyebrow": "03 — Science & Quality",
+    "eyebrow": "04 — Science & Quality",
     "title": "Wissenschaft & Qualität",
     "intro": "Die Besonderheit unserer Honige soll nachgewiesen und nicht nur beschrieben werden.",
     "bioactivityTitle": "Was ist Bioaktivität?",
@@ -177,7 +215,7 @@
     ]
   },
   "story": {
-    "eyebrow": "04 — Our Story",
+    "eyebrow": "03 — Our Story",
     "title": "Unsere Geschichte",
     "intro": "Bosques y Praderas ist das Unternehmen hinter Caramávida. [AUSSTEHEND: Ursprung des Unternehmens, Gründungsjahr und Motivation]",
     "blocks": [
@@ -201,15 +239,41 @@
     "galleryTitle": "Dokumentation",
     "gallery": [
       "Beispielbild: Imker bei der Kontrolle eines Bienenstocks",
-      "Beispielbild: Ulmo-Blüten",
       "Beispielbild: Tineo-Laub",
       "Beispielbild: Araukarien im Nahuelbuta-Gebirge",
-      "Beispielbild: Entdeckeln einer Honigwabe",
-      "Beispielbild: Wabe mit verdeckeltem Honig"
+      "Beispielbild: Araukarie bei Sonnenuntergang im Nahuelbuta-Gebirge"
     ]
   },
+  "rituals": {
+    "eyebrow": "05 — Rituals",
+    "title": "So genießen Sie ihn",
+    "intro": "Ein Honig aus dem Urwald verdient Zeit. Einige Ideen, ihn zu entdecken.",
+    "items": [
+      {
+        "title": "Zu gereiftem Käse",
+        "text": "Ein Faden Honig über gereiftem oder Blauschimmelkäse gleicht das Salz aus und hebt die Aromen."
+      },
+      {
+        "title": "Bergkräutertee",
+        "text": "Süßt einen Kräutertee sanft, ohne seinen Charakter zu überdecken. Erst zugeben, wenn das Getränk lauwarm ist."
+      },
+      {
+        "title": "Sauerteigbrot",
+        "text": "Auf noch warmem Toast, mit Butter und einer Prise Flockensalz."
+      },
+      {
+        "title": "Feine Küche",
+        "text": "Glasuren, Vinaigrettes und Desserts, die nach einer Süße mit Charakter verlangen."
+      },
+      {
+        "title": "Löffelweise, ohne Eile",
+        "text": "Die reinste Art, seine Noten zu entdecken: bei Raumtemperatur, direkt vom Löffel."
+      }
+    ],
+    "imageAlt": "Beispielbild: Honigwabe mit Honig und Honiglöffel auf Holz"
+  },
   "partnerships": {
-    "eyebrow": "05 — Trade & Partnerships",
+    "eyebrow": "06 — Trade & Partnerships",
     "title": "Internationale Partnerschaften",
     "intro": "Wir suchen Importeure, Distributoren und Handelsvertreter, die Herkunft, Authentizität und Nachweisbarkeit schätzen.",
     "valueTitle": "Wertversprechen",
@@ -241,6 +305,36 @@
     "markets": [
       "Europäische Union",
       "[AUSSTEHEND: weitere Prioritätsmärkte]"
+    ]
+  },
+  "faq": {
+    "eyebrow": "07 — FAQ",
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Warum kristallisiert Honig?",
+        "a": "Kristallisation ist ein natürlicher Vorgang. Sie hängt vor allem vom Verhältnis von Glukose zu Fruktose und von der Temperatur ab und beeinträchtigt die Qualität nicht. [AUSSTEHEND: spezifisches Verhalten von Ulmo und Tineo]"
+      },
+      {
+        "q": "Wie lagere ich ihn?",
+        "a": "Gut verschlossen, trocken, bei Raumtemperatur und vor direktem Licht geschützt. Um ihn wieder zu verflüssigen, sanft im Wasserbad bei moderater Temperatur erwärmen. [AUSSTEHEND: vom Erzeuger empfohlene Höchsttemperatur]"
+      },
+      {
+        "q": "Exportieren Sie?",
+        "a": "Wir arbeiten mit Importeuren und Distributoren. Exportbedingungen, Incoterms und Lieferzeiten werden individuell vereinbart. [AUSSTEHEND: freigegebene Märkte und Exportzertifizierungen]"
+      },
+      {
+        "q": "Kann ich Muster anfordern?",
+        "a": "Ja, über den Bereich Partnerschaften. [AUSSTEHEND: Versandbedingungen für Muster]"
+      },
+      {
+        "q": "Worin unterscheiden sich Ulmo und Tineo?",
+        "a": "Sie stammen aus der Blüte zweier verschiedener heimischer Bäume; daher unterscheiden sich Farbe, Aroma und Textur. Die Profile finden Sie unter Unsere Honige."
+      },
+      {
+        "q": "Was ist der NBI-Index?",
+        "a": "Ein eigener, in Entwicklung befindlicher Index zur Charakterisierung unserer Honige. Er ist keine standardisierte Skala und nicht mit anderen internationalen Skalen gleichzusetzen."
+      }
     ]
   },
   "contact": {
@@ -312,6 +406,8 @@
     "sectionsTitle": "Bereiche",
     "languageTitle": "Sprache",
     "privacy": "Datenschutzerklärung",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "seal": "Caramávida · Nahuelbuta · Chile",
+    "closing": "Geduldig geerntet am südlichen Ende der Welt."
   }
 }

@@ -22,53 +22,71 @@
     "closeMenu": "Cerrar menú",
     "languageSelector": "Seleccionar idioma",
     "changeLanguage": "Cambiar idioma",
-    "homeLink": "Caramávida, volver al inicio",
+    "homeLink": "Bosques & Praderas, volver al inicio",
     "currentLanguage": "idioma actual",
     "pendingImage": "Imagen pendiente",
     "exampleImage": "Imagen de ejemplo",
-    "photoCredit": "Foto"
+    "photoCredit": "Foto",
+    "exampleTag": "Ejemplo",
+    "exampleNote": "Los contenidos marcados como «Ejemplo» son ilustrativos y están pendientes de confirmación por el productor.",
+    "intensityOf": "de 5",
+    "adapted": "adaptada"
   },
   "nav": {
-    "home": "Inicio",
-    "origin": "Territorio",
     "honeys": "Nuestras mieles",
-    "science": "Ciencia y calidad",
-    "story": "Nuestra historia",
-    "partnerships": "Alianzas"
+    "origin": "Origen",
+    "science": "Ciencia",
+    "story": "Historia",
+    "rituals": "Rituales",
+    "partnerships": "Alianzas",
+    "faq": "Preguntas"
   },
   "cta": {
     "requestDossier": "Solicitar dossier",
     "becomeDistributor": "Conviértase en distribuidor",
     "requestCommercialDossier": "Solicitar dossier comercial",
     "contactSales": "Contactar al equipo comercial",
-    "requestSamples": "Solicitar muestras"
+    "requestSamples": "Solicitar muestras",
+    "exploreHarvest": "Explorar la cosecha",
+    "requestSample": "Solicitar muestra"
   },
   "hero": {
-    "eyebrow": "Mieles de Ulmo y Tineo · Chile",
-    "lead": "Mieles excepcionales de los bosques nativos del sur de Chile.",
+    "eyebrow": "Miel Caramávida · Sur de Chile",
+    "lead": "Miel de flora nativa, cosechada de forma artesanal en Caramávida, donde el bosque antiguo todavía marca el ritmo de las abejas.",
     "statement": "Un territorio único. Una flora extraordinaria. Mieles de Ulmo y Tineo cuya singularidad investigamos a través de la ciencia.",
-    "honeysIntro": "Ulmo y Tineo: dos árboles nativos, dos floraciones, dos mieles de carácter propio, cosechadas en Caramávida, en la cordillera de Nahuelbuta.",
-    "mediaLabel": "Imagen de ejemplo: araucaria al atardecer en la cordillera de Nahuelbuta",
-    "pillarsTitle": "Nuestros pilares",
-    "pillars": [
+    "mediaLabel": "Apicultor junto a las colmenas de Bosques y Praderas",
+    "title": "El oro silencioso de la Cordillera de Nahuelbuta",
+    "seal": "Bosque nativo · Nahuelbuta · Chile"
+  },
+  "credentials": {
+    "title": "Credenciales de origen y pureza",
+    "items": [
       {
-        "title": "Territorio",
-        "text": "Caramávida, cordillera de Nahuelbuta, Provincia de Arauco. Un origen preciso y acotado."
+        "title": "Sin filtrar en caliente",
+        "text": "Extraída y envasada sin someterla a altas temperaturas.",
+        "example": true
       },
       {
-        "title": "Singularidad botánica",
-        "text": "Néctar de especies nativas del bosque templado del sur de Chile."
+        "title": "Flora nativa de Nahuelbuta",
+        "text": "Néctar de ulmo, tineo y otras especies del bosque nativo.",
+        "example": false
       },
       {
-        "title": "Investigación",
-        "text": "Estudiamos la composición de nuestras mieles junto a la Universidad de La Frontera (UFRO)."
+        "title": "Cosecha responsable",
+        "text": "Solo se cosecha el excedente, respetando las reservas de cada colmena.",
+        "example": true
+      },
+      {
+        "title": "Cristalización natural",
+        "text": "Cristaliza de forma natural con el tiempo, sin aditivos.",
+        "example": true
       }
     ]
   },
   "origin": {
-    "eyebrow": "01 — The Origin",
-    "title": "Nuestro territorio",
-    "intro": "Caramávida se ubica en la cordillera de Nahuelbuta, la cordillera de la Costa en la Provincia de Arauco, al sur de Chile. Aquí el bosque nativo aún define el paisaje y el ritmo del año.",
+    "eyebrow": "02 — The Origin",
+    "title": "Donde la abeja conoce el bosque",
+    "intro": "En las laderas de Nahuelbuta, entre araucarias centenarias, ulmos y tineos, nuestras abejas recorren uno de los bosques nativos más singulares del sur de Chile.",
     "body": "[PENDIENTE: texto final sobre Caramávida — altitud aproximada, tipo de bosque predominante, clima y relación con las comunidades locales. Evitar cifras no verificadas.]",
     "landscapeAlt": "Imagen de ejemplo: atardecer sobre la cordillera de Nahuelbuta",
     "features": [
@@ -94,17 +112,27 @@
       "zone": "Caramávida",
       "country": "Chile",
       "caption": "Mapa ilustrativo, no a escala. No indica ubicaciones de apiarios."
-    }
+    },
+    "story": [
+      "Cada verano, cuando el ulmo cubre el bosque de flores blancas y el tineo despliega sus espigas, las colmenas trabajan al ritmo de una floración breve e irrepetible.",
+      "Caramávida se ubica en la cordillera de Nahuelbuta, en la Provincia de Arauco. Un territorio preciso, que define el carácter de cada cosecha."
+    ],
+    "quote": "El bosque marca el ritmo; nosotros solo lo acompañamos.",
+    "flowerAlt": "Imagen de ejemplo: flores de ulmo"
   },
   "honeys": {
-    "eyebrow": "02 — Our Honeys",
+    "eyebrow": "01 — Our Honeys",
     "title": "Nuestras mieles",
     "intro": "Dos mieles monoflorales de un mismo territorio, cada una con una identidad botánica y sensorial propia.",
     "labels": {
       "species": "Especie botánica",
       "flowering": "Temporada de floración",
       "origin": "Origen",
-      "sensory": "Perfil sensorial"
+      "sensory": "Perfil sensorial",
+      "format": "Formato",
+      "intensity": "Intensidad",
+      "notes": "Notas de cata",
+      "texture": "Textura"
     },
     "availability": "Disponibilidad comercial sujeta a confirmación.",
     "items": [
@@ -117,7 +145,12 @@
         "origin": "Caramávida, cordillera de Nahuelbuta, Provincia de Arauco, Chile",
         "sensory": "[PENDIENTE: perfil sensorial validado — color, aroma, sabor y textura]",
         "description": "[PENDIENTE: texto breve de presentación de la miel de Ulmo]",
-        "imageAlt": "Imagen de ejemplo: abeja sobre una flor de ulmo"
+        "imageAlt": "Imagen de ejemplo: abeja sobre una flor de ulmo",
+        "format": "[PENDIENTE: formatos y pesos disponibles]",
+        "intensity": 2,
+        "intensityLabel": "Delicada",
+        "notes": "Floral y luminosa, con recuerdos de jazmín y un final suave de vainilla.",
+        "texture": "Cremosa"
       },
       {
         "id": "tineo",
@@ -128,12 +161,17 @@
         "origin": "Caramávida, cordillera de Nahuelbuta, Provincia de Arauco, Chile",
         "sensory": "[PENDIENTE: perfil sensorial validado — color, aroma, sabor y textura]",
         "description": "[PENDIENTE: texto breve de presentación de la miel de Tineo]",
-        "imageAlt": "Imagen de ejemplo: flores de tineo"
+        "imageAlt": "Imagen de ejemplo: flores de tineo",
+        "format": "[PENDIENTE: formatos y pesos disponibles]",
+        "intensity": 4,
+        "intensityLabel": "Profunda",
+        "notes": "Herbal y profunda, con matices de madera húmeda y un final acaramelado.",
+        "texture": "Líquida, cristaliza con el tiempo"
       }
     ]
   },
   "science": {
-    "eyebrow": "03 — Science & Quality",
+    "eyebrow": "04 — Science & Quality",
     "title": "Ciencia y calidad",
     "intro": "Queremos que la singularidad de nuestras mieles pueda demostrarse, no solo describirse.",
     "bioactivityTitle": "¿Qué es la bioactividad?",
@@ -177,7 +215,7 @@
     ]
   },
   "story": {
-    "eyebrow": "04 — Our Story",
+    "eyebrow": "03 — Our Story",
     "title": "Nuestra historia",
     "intro": "Bosques y Praderas es la empresa detrás de Caramávida. [PENDIENTE: origen de la empresa, año de inicio y motivación]",
     "blocks": [
@@ -201,15 +239,41 @@
     "galleryTitle": "Registro documental",
     "gallery": [
       "Imagen de ejemplo: apicultor revisando una colmena",
-      "Imagen de ejemplo: flores de ulmo",
       "Imagen de ejemplo: follaje de tineo",
       "Imagen de ejemplo: araucarias en la cordillera de Nahuelbuta",
-      "Imagen de ejemplo: desoperculado de un marco de miel",
-      "Imagen de ejemplo: panal con miel operculada"
+      "Imagen de ejemplo: araucaria al atardecer en la cordillera de Nahuelbuta"
     ]
   },
+  "rituals": {
+    "eyebrow": "05 — Rituals",
+    "title": "Cómo disfrutarla",
+    "intro": "Una miel de bosque nativo merece tiempo. Algunas ideas para descubrirla.",
+    "items": [
+      {
+        "title": "Con quesos maduros",
+        "text": "Un hilo de miel sobre quesos curados o azules equilibra la sal y realza los aromas."
+      },
+      {
+        "title": "Infusiones de montaña",
+        "text": "Endulza con suavidad una infusión de hierbas sin cubrir su carácter. Añádala cuando la bebida esté tibia."
+      },
+      {
+        "title": "Pan de masa madre",
+        "text": "Sobre una tostada aún tibia, con mantequilla y una pizca de sal en escamas."
+      },
+      {
+        "title": "Cocina de autor",
+        "text": "Glaseados, vinagretas y postres que piden un dulzor con identidad."
+      },
+      {
+        "title": "A cucharadas, sin prisa",
+        "text": "La forma más pura de conocer sus notas: a temperatura ambiente, directamente de la cuchara."
+      }
+    ],
+    "imageAlt": "Imagen de ejemplo: panal con miel y cuchara de miel sobre madera"
+  },
   "partnerships": {
-    "eyebrow": "05 — Trade & Partnerships",
+    "eyebrow": "06 — Trade & Partnerships",
     "title": "Alianzas internacionales",
     "intro": "Buscamos importadores, distribuidores y representantes que valoren el origen, la autenticidad y la evidencia.",
     "valueTitle": "Propuesta de valor",
@@ -241,6 +305,36 @@
     "markets": [
       "Unión Europea",
       "[PENDIENTE: otros mercados prioritarios]"
+    ]
+  },
+  "faq": {
+    "eyebrow": "07 — FAQ",
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Por qué cristaliza la miel?",
+        "a": "La cristalización es un proceso natural de la miel: depende principalmente de su proporción de glucosa y fructosa, y de la temperatura. No altera su calidad. [PENDIENTE: comportamiento específico de Ulmo y Tineo]"
+      },
+      {
+        "q": "¿Cómo debo conservarla?",
+        "a": "Bien cerrada, en un lugar seco, a temperatura ambiente y lejos de la luz directa. Para volver a fluidificarla, caliéntela suavemente a baño maría, a temperatura moderada. [PENDIENTE: temperatura máxima recomendada por el productor]"
+      },
+      {
+        "q": "¿Exportan?",
+        "a": "Trabajamos con importadores y distribuidores. Las condiciones de exportación, incoterms y plazos se acuerdan caso a caso. [PENDIENTE: mercados habilitados y certificaciones de exportación]"
+      },
+      {
+        "q": "¿Puedo solicitar muestras?",
+        "a": "Sí, desde la sección Alianzas. [PENDIENTE: condiciones de envío de muestras]"
+      },
+      {
+        "q": "¿En qué se diferencian Ulmo y Tineo?",
+        "a": "Provienen de la floración de dos árboles nativos distintos, por lo que su color, aroma y textura difieren. Encontrará el perfil de cada una en Nuestras mieles."
+      },
+      {
+        "q": "¿Qué es el índice NBI?",
+        "a": "Es un índice propio en desarrollo con el que buscamos caracterizar nuestras mieles. No es una escala estandarizada ni equivale a otras escalas internacionales."
+      }
     ]
   },
   "contact": {
@@ -312,6 +406,8 @@
     "sectionsTitle": "Secciones",
     "languageTitle": "Idioma",
     "privacy": "Política de privacidad",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "seal": "Caramávida · Nahuelbuta · Chile",
+    "closing": "Cosechada con paciencia en el sur del mundo."
   }
 }

@@ -4,10 +4,11 @@ import { I18nService } from '../../core/i18n/i18n.service';
 import { NAV_ITEMS } from '../../data/sections.data';
 import { PENDING_VALUE, SITE_CONFIG } from '../../data/site.config';
 import { LanguageSwitcherComponent } from '../../shared/components/language-switcher/language-switcher.component';
+import { WaxSealComponent } from '../../shared/components/wax-seal/wax-seal.component';
 
 @Component({
   selector: 'app-site-footer',
-  imports: [RouterLink, LanguageSwitcherComponent],
+  imports: [RouterLink, LanguageSwitcherComponent, WaxSealComponent],
   templateUrl: './site-footer.component.html',
   styleUrl: './site-footer.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

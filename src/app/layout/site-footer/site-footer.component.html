@@ -1,8 +1,20 @@
 <footer class="footer honeycomb honeycomb--dark honeycomb--wide">
+  <div class="container footer__crest">
+    <app-wax-seal class="footer__seal" [text]="t().footer.seal" />
+    <p class="footer__closing">{{ t().footer.closing }}</p>
+  </div>
+
   <div class="container footer__grid">
     <div class="footer__brand">
-      <p class="footer__name">{{ t().brand.name }}</p>
-      <p class="footer__tagline">{{ t().brand.tagline }}</p>
+      <img
+        class="footer__logo"
+        src="images/marca/logo-bosques-praderas-oscuro.png"
+        width="640"
+        height="616"
+        [alt]="t().brand.company"
+        loading="lazy"
+      />
+      <p class="footer__tagline">{{ t().brand.name }} — {{ t().brand.tagline }}</p>
       <p class="footer__text">{{ t().footer.tagline }}</p>
     </div>
 

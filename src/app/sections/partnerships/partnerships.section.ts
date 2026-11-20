@@ -4,11 +4,12 @@ import { SECTION_IDS } from '../../data/sections.data';
 import { SITE_CONFIG } from '../../data/site.config';
 import { CtaLinkComponent } from '../../shared/components/cta-link/cta-link.component';
 import { RevealDirective } from '../../shared/directives/reveal.directive';
-import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @Component({
   selector: 'app-partnerships-section',
-  imports: [CtaLinkComponent, ContactFormComponent, RevealDirective],
+  // The contact form (./contact-form) is hidden for now: to restore it, uncomment its
+  // block in the template and add ContactFormComponent back to these imports.
+  imports: [CtaLinkComponent, RevealDirective],
   templateUrl: './partnerships.section.html',
   styleUrl: './partnerships.section.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

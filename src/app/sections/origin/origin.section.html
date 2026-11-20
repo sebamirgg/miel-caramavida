@@ -1,28 +1,51 @@
-<section [id]="id" class="section honeycomb honeycomb--left" tabindex="-1" aria-labelledby="origin-title">
+<section
+  [id]="id"
+  class="section section--forest honeycomb honeycomb--wide on-dark"
+  tabindex="-1"
+  aria-labelledby="origin-title"
+>
   <div class="container origin">
-    <div class="origin__text">
+    <div class="origin__story">
       <header appReveal>
         <p class="eyebrow">{{ t().origin.eyebrow }}</p>
         <h2 id="origin-title" class="section-title">{{ t().origin.title }}</h2>
         <hr class="rule" />
-        <p class="origin__intro">{{ t().origin.intro }}</p>
-        <p class="origin__body">{{ t().origin.body }}</p>
       </header>
 
-      <ul class="features" role="list">
-        @for (feature of t().origin.features; track $index) {
-          <li class="feature" appReveal>
-            <h3 class="feature__title">{{ feature.title }}</h3>
-            <p class="feature__text">{{ feature.text }}</p>
-          </li>
-        }
-      </ul>
+      <p class="origin__intro" appReveal>{{ t().origin.intro }}</p>
+      @for (paragraph of t().origin.story; track $index) {
+        <p class="origin__paragraph" appReveal>{{ paragraph }}</p>
+      }
+
+      <blockquote class="origin__quote" appReveal>
+        <app-bee-icon class="origin__bee" />
+        <p>{{ t().origin.quote }}</p>
+      </blockquote>
     </div>
 
-    <app-origin-map class="origin__map" [labels]="t().origin.map" appReveal />
+    <figure class="origin__flower" appReveal>
+      <app-media class="hex-mask" [asset]="flower" [alt]="t().origin.flowerAlt" ratio="1 / 1.155" />
+    </figure>
   </div>
 
   <div class="container">
-    <app-media class="origin__landscape framed" [asset]="landscape" [alt]="t().origin.landscapeAlt" appReveal />
+    <app-media class="origin__landscape framed" [asset]="landscape" [alt]="t().origin.landscapeAlt" ratio="21 / 9" appReveal />
+  </div>
+
+  <div class="container origin__details">
+    <ul class="features" role="list">
+      @for (feature of t().origin.features; track $index) {
+        <li class="feature" appReveal>
+          <span class="hex-badge" aria-hidden="true">0{{ $index + 1 }}</span>
+          <h3 class="feature__title">{{ feature.title }}</h3>
+          <p class="feature__text">{{ feature.text }}</p>
+        </li>
+      }
+    </ul>
+
+    <div class="origin__map" appReveal>
+      <app-origin-map [labels]="t().origin.map" />
+      <p class="origin__body">{{ t().origin.body }}</p>
+    </div>
   </div>
 </section>

@@ -1,0 +1,22 @@
+<section [id]="id" class="section section--ivory honeycomb honeycomb--left" tabindex="-1" aria-labelledby="faq-title">
+  <div class="container faq">
+    <header class="faq__head" appReveal>
+      <p class="eyebrow">{{ t().faq.eyebrow }}</p>
+      <h2 id="faq-title" class="section-title">{{ t().faq.title }}</h2>
+      <hr class="rule" />
+      <app-cta-link [label]="t().cta.contactSales" variant="outline" intent="other" />
+    </header>
+
+    <div class="faq__list" appReveal>
+      @for (item of t().faq.items; track $index) {
+        <details class="faq__item" name="faq">
+          <summary class="faq__question">
+            <span>{{ item.q }}</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <p class="faq__answer">{{ item.a }}</p>
+        </details>
+      }
+    </div>
+  </div>
+</section>

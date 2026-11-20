@@ -8,7 +8,7 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
   selector: 'app-honeys-section',
   imports: [HoneyCardComponent, RevealDirective],
   template: `
-    <section [id]="id" class="section section--alt honeycomb" tabindex="-1" aria-labelledby="honeys-title">
+    <section [id]="id" class="section honeycomb honeycomb--left" tabindex="-1" aria-labelledby="honeys-title">
       <div class="container">
         <header class="section-header section-header--center" appReveal>
           <p class="eyebrow">{{ t().honeys.eyebrow }}</p>

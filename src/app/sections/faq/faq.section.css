@@ -1,0 +1,108 @@
+.faq {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.faq__head .rule {
+  margin-bottom: var(--space-6);
+}
+
+.faq__list {
+  border-top: 1px solid var(--line);
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--line);
+  /* Smooth open/close where supported (progressive enhancement). */
+  interpolate-size: allow-keywords;
+}
+
+.faq__item::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition:
+    block-size 0.7s var(--ease),
+    content-visibility 0.7s allow-discrete;
+}
+
+.faq__item[open]::details-content {
+  block-size: auto;
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding-block: var(--space-5);
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1.3;
+  list-style: none;
+  cursor: pointer;
+  transition: color 0.5s var(--ease);
+}
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question:hover {
+  color: var(--copper-deep);
+}
+
+/* Honey cell with a plus that turns into a minus. */
+.faq__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2.3rem;
+  clip-path: var(--hex-clip);
+  background: var(--sand);
+  transition: background 0.5s var(--ease);
+}
+
+.faq__icon::before,
+.faq__icon::after {
+  content: '';
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 0.7rem;
+  height: 1.5px;
+  background: var(--bark);
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s var(--ease);
+}
+
+.faq__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq__item[open] .faq__icon {
+  background: var(--honey-glow);
+}
+
+.faq__item[open] .faq__icon::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.faq__answer {
+  max-width: 44rem;
+  padding-bottom: var(--space-6);
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+@media (min-width: 64rem) {
+  .faq {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .faq__head {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-6));
+  }
+}

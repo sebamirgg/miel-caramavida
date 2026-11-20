@@ -1,4 +1,5 @@
 import es from '../../../assets/i18n/es.json';
+import type { FlagCountry } from '../../shared/components/flag/flag.component';
 
 /**
  * Supported site languages (also the URL segment: /es, /en, /de, /zh, /ja).
@@ -12,21 +13,29 @@ export const DEFAULT_LANG: Lang = 'es';
 export interface LangMeta {
   /** BCP 47 code for <html lang>, `lang` attributes and hreflang. */
   htmlLang: string;
+  /**
+   * Flag shown next to the language name in the selector. A flag stands for a
+   * country, not a language: Spanish uses Chile (brand origin) and English the
+   * United Kingdom (European market focus). Change here if needed.
+   */
+  flag: FlagCountry;
   /** Extra web fonts this language needs (CJK glyphs), loaded only on its pages. */
   fontsHref: string | null;
 }
 
 export const LANG_META: Record<Lang, LangMeta> = {
-  es: { htmlLang: 'es', fontsHref: null },
-  en: { htmlLang: 'en', fontsHref: null },
-  de: { htmlLang: 'de', fontsHref: null },
+  es: { htmlLang: 'es', flag: 'cl', fontsHref: null },
+  en: { htmlLang: 'en', flag: 'gb', fontsHref: null },
+  de: { htmlLang: 'de', flag: 'de', fontsHref: null },
   zh: {
     htmlLang: 'zh-Hans',
+    flag: 'cn',
     fontsHref:
       'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;500&display=swap',
   },
   ja: {
     htmlLang: 'ja',
+    flag: 'jp',
     fontsHref:
       'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@400;500&display=swap',
   },

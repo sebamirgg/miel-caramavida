@@ -1,172 +1,168 @@
+/* ==========================================================================
+   Hero — editorial, asymmetric. The photograph has no frame: it fills the
+   right side and dissolves into a warm backdrop made from its own colours.
+   Layers (back → front): backdrop · veil · honeycomb · photo · copy.
+   ========================================================================== */
+
 .hero {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 100svh;
-  padding-top: calc(var(--header-height) + var(--space-8));
   overflow: hidden;
-  background: var(--brown-950);
-  color: var(--color-text-on-dark);
-  isolation: isolate;
+  background: var(--sand);
 }
 
-/* Thin gold frame around the hero, like a premium label. */
-.hero::after {
-  content: '';
+/* The photo, blurred into a warm honey light that echoes the image. */
+.hero__backdrop {
   position: absolute;
-  inset: calc(var(--header-height) + 1rem) clamp(0.75rem, 2vw, 1.5rem) clamp(0.75rem, 2vw, 1.5rem);
-  border: 1px solid rgb(240 197 96 / 22%);
-  pointer-events: none;
+  inset: -10%;
+  z-index: -3;
+  background-position: 60% 40%;
+  background-size: cover;
+  filter: blur(80px) saturate(0.9);
+  opacity: 0.55;
 }
 
-.hero__media {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-
-.hero__video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero__scrim {
+/* Cream veil: calm, readable copy side (contrast stays AA) and a light band
+   under the header so the navigation reads before the glass effect kicks in. */
+.hero__veil {
   position: absolute;
   inset: 0;
+  z-index: -2;
   background:
-    radial-gradient(ellipse 70% 55% at 50% 45%, rgb(20 13 7 / 55%), transparent 75%),
-    linear-gradient(180deg, rgb(20 13 7 / 55%) 0%, rgb(20 13 7 / 30%) 40%, rgb(20 13 7 / 92%) 100%);
-  pointer-events: none;
+    linear-gradient(180deg, rgb(250 246 240 / 70%) 0, transparent 7rem),
+    linear-gradient(180deg, rgb(250 246 240 / 0%) 30%, rgb(250 246 240 / 92%) 55%),
+    var(--grain);
 }
 
-/* Honeycomb rising from the bottom of the hero. */
-.hero__comb {
+/* ----- Photograph (mobile: top band that melts into the copy below) ----- */
+.hero__visual {
+  position: relative;
+  height: clamp(24rem, 62svh, 36rem);
+}
+
+.hero__photo {
+  /* Read by the global `app-media.melt img` rule: fade only the image.
+     Framing keeps the beekeeper and the hive tower in view. */
+  --melt-position: 42% 35%;
+  --melt-mask: linear-gradient(180deg, transparent 0, #000 18%, #000 66%, transparent 100%);
+}
+
+.hero__seal {
   position: absolute;
-  inset: auto 0 0;
-  height: 60%;
-  background-image: var(--hex-dark);
-  background-size: 46px 80px;
-  -webkit-mask-image: linear-gradient(0deg, #000 0%, transparent 100%);
-  mask-image: linear-gradient(0deg, #000 0%, transparent 100%);
-  pointer-events: none;
+  right: var(--gutter);
+  bottom: 12%;
+  width: clamp(6.5rem, 5rem + 4vw, 8.5rem);
 }
 
+/* ----- Copy ----- */
 .hero__content {
-  max-width: calc(56rem + 2 * var(--gutter));
-  margin-block: auto;
-  text-align: center;
-}
-
-.hero .eyebrow {
-  color: var(--color-accent-on-dark);
+  position: relative;
+  margin-top: -3rem;
+  padding-bottom: clamp(4rem, 2rem + 6vw, 7rem);
 }
 
 .hero__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-3);
-}
-
-.hero__brand {
+  max-width: 13ch;
   font-family: var(--font-display);
-  font-size: clamp(2.1rem, 1.1rem + 4.6vw, 5.25rem);
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  line-height: 1;
-  text-transform: uppercase;
-  /* Champagne-to-honey sheen on the wordmark. */
-  background: linear-gradient(180deg, #fffaf0 0%, #fbe7bd 55%, var(--gold-300) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: none;
-}
-
-@media (forced-colors: active) {
-  .hero__brand {
-    color: CanvasText;
-  }
-}
-
-.hero__tagline {
-  color: var(--color-accent-on-dark);
-  font-family: var(--font-serif);
-  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.03em;
+  font-size: var(--text-display);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
 }
 
 .hero__lead {
+  max-width: 34rem;
   margin-top: var(--space-6);
+  color: var(--color-text-muted);
   font-size: var(--text-lg);
   font-weight: 300;
-  letter-spacing: 0.02em;
-}
-
-.hero__statement {
-  max-width: 38rem;
-  margin: var(--space-4) auto 0;
-  color: var(--color-text-on-dark-muted);
+  line-height: 1.8;
 }
 
 .hero__ctas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: var(--space-3);
   margin-top: var(--space-7);
 }
 
-.hero__footer {
+.hero__signature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.9rem;
   margin-top: var(--space-8);
-  padding-bottom: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgb(166 104 26 / 22%);
 }
 
-.hero__honeys {
-  max-width: 40rem;
-  margin-bottom: var(--space-6);
+.hero__brand {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hero__tagline {
+  color: var(--copper-deep);
   font-family: var(--font-serif);
-  font-size: var(--text-xl);
+  font-size: 1.15rem;
   font-style: italic;
-  line-height: 1.4;
 }
 
-.pillars {
-  display: grid;
-  gap: var(--space-5);
-  list-style: none;
-  padding-top: var(--space-6);
-  border-top: 1px solid rgb(252 248 239 / 20%);
-}
-
-.pillar {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: var(--space-4);
-}
-
-.pillar__index {
-  grid-row: span 2;
-  align-self: start;
-}
-
-.pillar__title {
-  font-size: var(--text-xl);
-}
-
-.pillar__text {
-  margin-top: var(--space-1);
-  color: var(--color-text-on-dark-muted);
+.hero__statement {
+  max-width: 32rem;
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
   font-size: var(--text-sm);
 }
 
-@media (min-width: 48rem) {
-  .pillars {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-6);
+/* ----- Desktop: photo fills the right side, copy on the left ----- */
+@media (min-width: 64rem) {
+  .hero {
+    justify-content: center;
+    min-height: 100svh;
+  }
+
+  .hero__veil {
+    background:
+      linear-gradient(180deg, rgb(250 246 240 / 75%) 0, transparent 7rem),
+      linear-gradient(90deg, rgb(250 246 240 / 95%) 0%, rgb(250 246 240 / 90%) 42%, rgb(250 246 240 / 30%) 62%, rgb(250 246 240 / 0%) 80%),
+      var(--grain);
+  }
+
+  .hero__visual {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 62%;
+    height: auto;
+  }
+
+  .hero__photo {
+    /* Dissolves towards the copy, the header and the next section. */
+    --melt-mask:
+      linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 60%) 14%, #000 30%),
+      linear-gradient(180deg, transparent 0, #000 16%, #000 84%, transparent 100%);
+  }
+
+  .hero__photo {
+    --melt-position: 0% 35%;
+  }
+
+  .hero__seal {
+    right: auto;
+    left: 8%;
+    bottom: 12%;
+  }
+
+  .hero__content {
+    margin-top: 0;
+    padding-top: calc(var(--header-height) + var(--space-7));
+    padding-bottom: var(--space-8);
+  }
+
+  .hero__copy {
+    max-width: min(46%, 38rem);
   }
 }

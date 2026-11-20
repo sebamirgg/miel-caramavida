@@ -23,9 +23,16 @@ export type CtaVariant = 'primary' | 'accent' | 'outline' | 'text';
       >{{ label() }}</a
     >
   `,
+  host: { '[class.is-block]': 'block()' },
   styles: `
     :host {
       display: inline-flex;
+    }
+    :host(.is-block) {
+      display: flex;
+    }
+    :host(.is-block) a {
+      flex: 1;
     }
     .btn--small {
       min-height: 2.5rem;
@@ -38,7 +45,10 @@ export class CtaLinkComponent {
   private readonly intentService = inject(ContactIntentService);
 
   readonly label = input.required<string>();
-  readonly fragment = input<string>(SECTION_IDS.contact);
+  /** Target section. Defaults to Partnerships (the contact form is currently hidden). */
+  readonly fragment = input<string>(SECTION_IDS.partnerships);
+  /** Stretch to the full width of its container. */
+  readonly block = input(false);
   readonly variant = input<CtaVariant>('primary');
   readonly small = input(false);
   readonly intent = input<InquiryType | null>(null);

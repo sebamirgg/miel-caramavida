@@ -13,6 +13,7 @@ import {
 } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { FlagComponent } from '../flag/flag.component';
 import { I18nService } from '../../../core/i18n/i18n.service';
 import { LANG_META, SUPPORTED_LANGS } from '../../../core/i18n/i18n.types';
 
@@ -28,7 +29,7 @@ let nextId = 0;
  */
 @Component({
   selector: 'app-language-switcher',
-  imports: [RouterLink, NgTemplateOutlet],
+  imports: [RouterLink, NgTemplateOutlet, FlagComponent],
   templateUrl: './language-switcher.component.html',
   styleUrl: './language-switcher.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -54,6 +55,7 @@ export class LanguageSwitcherComponent {
   protected readonly languages = SUPPORTED_LANGS.map((code) => ({
     code,
     htmlLang: LANG_META[code].htmlLang,
+    flag: LANG_META[code].flag,
     name: this.i18n.dictionary(code).language.name,
   }));
 

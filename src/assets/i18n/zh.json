@@ -22,53 +22,71 @@
     "closeMenu": "关闭菜单",
     "languageSelector": "选择语言",
     "changeLanguage": "切换语言",
-    "homeLink": "Caramávida，返回顶部",
+    "homeLink": "Bosques & Praderas，返回顶部",
     "currentLanguage": "当前语言",
     "pendingImage": "图片待补充",
     "exampleImage": "示例图片",
-    "photoCredit": "摄影"
+    "photoCredit": "摄影",
+    "exampleTag": "示例",
+    "exampleNote": "标注“示例”的内容仅作展示，尚待生产者确认。",
+    "intensityOf": "/ 5",
+    "adapted": "已裁剪"
   },
   "nav": {
-    "home": "首页",
-    "origin": "产地",
     "honeys": "我们的蜂蜜",
-    "science": "科学与品质",
-    "story": "我们的故事",
-    "partnerships": "合作"
+    "origin": "产地",
+    "science": "科学",
+    "story": "故事",
+    "rituals": "品鉴",
+    "partnerships": "合作",
+    "faq": "常见问题"
   },
   "cta": {
     "requestDossier": "索取资料",
     "becomeDistributor": "成为经销商",
     "requestCommercialDossier": "索取商务资料",
     "contactSales": "联系销售团队",
-    "requestSamples": "索取样品"
+    "requestSamples": "索取样品",
+    "exploreHarvest": "探索本季收成",
+    "requestSample": "索取样品"
   },
   "hero": {
-    "eyebrow": "乌尔莫与蒂内奥蜂蜜 · 智利",
-    "lead": "来自智利南部原始森林的非凡蜂蜜。",
+    "eyebrow": "Caramávida 蜂蜜 · 智利南部",
+    "lead": "源自原生植物的蜂蜜，在 Caramávida 以传统手工方式采收——在这里，古老的森林依然主宰着蜜蜂的节律。",
     "statement": "独一无二的土地，非同寻常的植物群。我们以科学研究乌尔莫与蒂内奥蜂蜜的独特之处。",
-    "honeysIntro": "乌尔莫与蒂内奥：两种原生树木，两次花期，两种个性鲜明的蜂蜜，采收于纳韦尔布塔山脉的 Caramávida。",
-    "mediaLabel": "示例图片：纳韦尔布塔山脉日落时分的智利南洋杉",
-    "pillarsTitle": "我们的支柱",
-    "pillars": [
+    "mediaLabel": "Bosques y Praderas 的养蜂人与蜂箱",
+    "title": "纳韦尔布塔山脉的静谧之金",
+    "seal": "原生森林 · 纳韦尔布塔 · 智利"
+  },
+  "credentials": {
+    "title": "产地与纯净",
+    "items": [
       {
-        "title": "产地",
-        "text": "Caramávida，纳韦尔布塔山脉，阿劳科省。精确而明确的产地。"
+        "title": "未经高温过滤",
+        "text": "提取与灌装过程不经高温处理。",
+        "example": true
       },
       {
-        "title": "植物独特性",
-        "text": "花蜜来自智利南部温带森林的原生物种。"
+        "title": "纳韦尔布塔原生植物",
+        "text": "花蜜来自乌尔莫、蒂内奥及其他原生森林物种。",
+        "example": false
       },
       {
-        "title": "科学研究",
-        "text": "我们与拉弗龙特拉大学（UFRO）共同研究蜂蜜的成分。"
+        "title": "负责任的采收",
+        "text": "只采收富余的蜂蜜，保留每个蜂群的储备。",
+        "example": true
+      },
+      {
+        "title": "自然结晶",
+        "text": "随时间自然结晶，不含任何添加物。",
+        "example": true
       }
     ]
   },
   "origin": {
-    "eyebrow": "01 — The Origin",
-    "title": "我们的产地",
-    "intro": "Caramávida 位于纳韦尔布塔山脉——智利南部阿劳科省海岸山脉的一部分。在这里，原生森林依然塑造着地貌与四季的节奏。",
+    "eyebrow": "02 — The Origin",
+    "title": "蜜蜂与森林相知之地",
+    "intro": "在纳韦尔布塔的山坡上，在百年智利南洋杉、乌尔莫与蒂内奥之间，我们的蜜蜂穿行于智利南部最独特的原生森林之一。",
     "body": "[待补充：关于 Caramávida 的最终文案——大致海拔、主要森林类型、气候以及与当地社区的关系。避免使用未经核实的数据。]",
     "landscapeAlt": "示例图片：纳韦尔布塔山脉上空的日落",
     "features": [
@@ -94,17 +112,27 @@
       "zone": "Caramávida",
       "country": "智利",
       "caption": "示意地图，未按比例绘制。不显示蜂场位置。"
-    }
+    },
+    "story": [
+      "每年夏天，当乌尔莫以白花覆盖森林、蒂内奥舒展花穗，蜂群便随着短暂而不可复制的花期劳作。",
+      "Caramávida 位于阿劳科省的纳韦尔布塔山脉。明确的产地，塑造了每一季收成的个性。"
+    ],
+    "quote": "森林定下节奏，我们只是追随。",
+    "flowerAlt": "示例图片：乌尔莫花"
   },
   "honeys": {
-    "eyebrow": "02 — Our Honeys",
+    "eyebrow": "01 — Our Honeys",
     "title": "我们的蜂蜜",
     "intro": "同一片土地上的两种单花蜜，各自拥有独特的植物与感官特征。",
     "labels": {
       "species": "植物学名",
       "flowering": "花期",
       "origin": "产地",
-      "sensory": "感官特征"
+      "sensory": "感官特征",
+      "format": "规格",
+      "intensity": "浓郁度",
+      "notes": "品鉴风味",
+      "texture": "质地"
     },
     "availability": "商业供应情况有待确认。",
     "items": [
@@ -117,7 +145,12 @@
         "origin": "智利阿劳科省纳韦尔布塔山脉 Caramávida",
         "sensory": "[待补充：经验证的感官特征——颜色、香气、风味与质地]",
         "description": "[待补充：乌尔莫蜂蜜简介]",
-        "imageAlt": "示例图片：乌尔莫花上的蜜蜂"
+        "imageAlt": "示例图片：乌尔莫花上的蜜蜂",
+        "format": "[待补充：可供规格与重量]",
+        "intensity": 2,
+        "intensityLabel": "清雅",
+        "notes": "花香明亮，带有茉莉的气息和柔和的香草余韵。",
+        "texture": "绵密"
       },
       {
         "id": "tineo",
@@ -128,12 +161,17 @@
         "origin": "智利阿劳科省纳韦尔布塔山脉 Caramávida",
         "sensory": "[待补充：经验证的感官特征——颜色、香气、风味与质地]",
         "description": "[待补充：蒂内奥蜂蜜简介]",
-        "imageAlt": "示例图片：蒂内奥花"
+        "imageAlt": "示例图片：蒂内奥花",
+        "format": "[待补充：可供规格与重量]",
+        "intensity": 4,
+        "intensityLabel": "醇厚",
+        "notes": "草本深沉，带有湿润木质的气息和焦糖般的余韵。",
+        "texture": "液态，随时间结晶"
       }
     ]
   },
   "science": {
-    "eyebrow": "03 — Science & Quality",
+    "eyebrow": "04 — Science & Quality",
     "title": "科学与品质",
     "intro": "我们希望蜂蜜的独特之处能够被证明，而不仅仅是被描述。",
     "bioactivityTitle": "什么是生物活性？",
@@ -177,7 +215,7 @@
     ]
   },
   "story": {
-    "eyebrow": "04 — Our Story",
+    "eyebrow": "03 — Our Story",
     "title": "我们的故事",
     "intro": "Bosques y Praderas 是 Caramávida 背后的公司。[待补充：公司起源、创立年份与初衷]",
     "blocks": [
@@ -201,15 +239,41 @@
     "galleryTitle": "纪实影像",
     "gallery": [
       "示例图片：养蜂人检查蜂箱",
-      "示例图片：乌尔莫花",
       "示例图片：蒂内奥枝叶",
       "示例图片：纳韦尔布塔山脉的智利南洋杉",
-      "示例图片：为蜜脾割除蜡盖",
-      "示例图片：封盖蜜脾"
+      "示例图片：纳韦尔布塔山脉日落时分的智利南洋杉"
     ]
   },
+  "rituals": {
+    "eyebrow": "05 — Rituals",
+    "title": "品味之道",
+    "intro": "原生森林的蜂蜜值得慢慢品味。以下是几种探索方式。",
+    "items": [
+      {
+        "title": "搭配陈年奶酪",
+        "text": "在熟成奶酪或蓝纹奶酪上淋一缕蜂蜜，平衡咸味，提升香气。"
+      },
+      {
+        "title": "山野花草茶",
+        "text": "温和地为花草茶增添甜味，而不掩盖其本色。请在饮品温热时加入。"
+      },
+      {
+        "title": "酸种面包",
+        "text": "抹在温热的吐司上，配黄油和少许片状海盐。"
+      },
+      {
+        "title": "主厨料理",
+        "text": "适用于需要独特甜味的釉汁、油醋汁与甜点。"
+      },
+      {
+        "title": "一勺慢品",
+        "text": "认识其风味最纯粹的方式：常温下，直接从勺中品尝。"
+      }
+    ],
+    "imageAlt": "示例图片：木板上的蜂巢蜜与蜂蜜勺"
+  },
   "partnerships": {
-    "eyebrow": "05 — Trade & Partnerships",
+    "eyebrow": "06 — Trade & Partnerships",
     "title": "国际合作",
     "intro": "我们正在寻找重视产地、真实性与科学依据的进口商、经销商和商务代表。",
     "valueTitle": "价值主张",
@@ -241,6 +305,36 @@
     "markets": [
       "欧盟",
       "[待补充：其他重点市场]"
+    ]
+  },
+  "faq": {
+    "eyebrow": "07 — FAQ",
+    "title": "常见问题",
+    "items": [
+      {
+        "q": "蜂蜜为什么会结晶？",
+        "a": "结晶是蜂蜜的自然现象，主要取决于葡萄糖与果糖的比例以及温度，不影响品质。[待补充：乌尔莫与蒂内奥的具体结晶特性]"
+      },
+      {
+        "q": "如何保存？",
+        "a": "请密封保存于干燥、常温、避免阳光直射之处。如需恢复液态，可隔水以适中温度缓慢加热。[待补充：生产者建议的最高温度]"
+      },
+      {
+        "q": "你们是否出口？",
+        "a": "我们与进口商和经销商合作。出口条件、贸易术语及交货期按个案协商。[待补充：已开放市场及出口认证]"
+      },
+      {
+        "q": "可以索取样品吗？",
+        "a": "可以，请通过“合作”栏目申请。[待补充：样品寄送条件]"
+      },
+      {
+        "q": "乌尔莫与蒂内奥有何不同？",
+        "a": "两者分别来自两种不同原生树木的花期，因此颜色、香气与质地各不相同。详见“我们的蜂蜜”。"
+      },
+      {
+        "q": "什么是 NBI 指数？",
+        "a": "这是一项正在研发中的自主指数，用于描述我们蜂蜜的特性。它并非标准化等级，也不等同于其他国际分级体系。"
+      }
     ]
   },
   "contact": {
@@ -312,6 +406,8 @@
     "sectionsTitle": "栏目",
     "languageTitle": "语言",
     "privacy": "隐私政策",
-    "rights": "保留所有权利。"
+    "rights": "保留所有权利。",
+    "seal": "Caramávida · Nahuelbuta · Chile",
+    "closing": "在世界南端，耐心采收。"
   }
 }
