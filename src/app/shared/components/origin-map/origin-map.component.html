@@ -1,0 +1,66 @@
+<figure class="map">
+  <svg viewBox="0 0 400 500" role="img" aria-labelledby="origin-map-title">
+    <title id="origin-map-title">{{ labels().title }}</title>
+
+    <!-- Ocean -->
+    <rect width="400" height="500" class="map__ocean" />
+    <g class="map__waves" aria-hidden="true">
+      <path d="M24 120 q10 -6 20 0 t20 0" />
+      <path d="M50 300 q10 -6 20 0 t20 0" />
+      <path d="M30 420 q10 -6 20 0 t20 0" />
+    </g>
+
+    <!-- Land (schematic coastline, not to scale) -->
+    <path
+      class="map__land"
+      d="M150 0 C140 60 168 110 152 160 C140 198 118 226 132 268 C146 308 138 356 154 408 C164 446 150 478 158 500 L400 500 L400 0 Z"
+    />
+
+    <!-- Nahuelbuta range: contour lines -->
+    <g class="map__contours" aria-hidden="true">
+      <ellipse cx="208" cy="285" rx="46" ry="98" />
+      <ellipse cx="208" cy="290" rx="32" ry="72" />
+      <ellipse cx="210" cy="296" rx="18" ry="44" />
+    </g>
+
+    <!-- Andes -->
+    <polyline
+      class="map__andes"
+      aria-hidden="true"
+      points="352,20 362,48 346,76 364,108 348,140 366,174 350,206 368,240 352,272 370,306 354,338 372,372 356,404 374,438 358,470 368,500"
+    />
+
+    <!-- Referential zone (no exact location) -->
+    <circle class="map__zone" cx="212" cy="304" r="22" />
+    <circle class="map__zone-dot" cx="212" cy="304" r="3.5" />
+
+    <!-- Labels -->
+    <text class="map__label map__label--ocean" x="72" y="250" transform="rotate(-90 72 250)">
+      {{ labels().ocean }}
+    </text>
+    <text class="map__label" x="240" y="172" text-anchor="middle">{{ labels().coastalRange }}</text>
+    <text class="map__label map__label--zone" x="242" y="309">{{ labels().zone }}</text>
+    <text class="map__label map__label--muted" x="232" y="420" text-anchor="middle">
+      {{ labels().province }}
+    </text>
+    <text
+      class="map__label map__label--muted"
+      x="386"
+      y="250"
+      text-anchor="middle"
+      transform="rotate(90 386 250)"
+    >
+      {{ labels().andes }}
+    </text>
+    <text class="map__label map__label--country" x="280" y="476" text-anchor="middle">
+      {{ labels().country }}
+    </text>
+
+    <!-- North arrow -->
+    <g class="map__north" transform="translate(300 40)" aria-hidden="true">
+      <path d="M0 -14 L6 6 L0 2 L-6 6 Z" />
+      <text y="22" text-anchor="middle">N</text>
+    </g>
+  </svg>
+  <figcaption class="map__caption">{{ labels().caption }}</figcaption>
+</figure>

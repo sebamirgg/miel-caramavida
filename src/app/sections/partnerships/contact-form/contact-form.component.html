@@ -1,0 +1,178 @@
+@if (status() === 'success') {
+  <div class="success" role="status">
+    <h4 id="cf-success-title" class="success__title" tabindex="-1">{{ t().contact.success.title }}</h4>
+    <p>{{ t().contact.success.text }}</p>
+    <button type="button" class="btn btn--outline" (click)="resetForm()">
+      {{ t().contact.success.again }}
+    </button>
+  </div>
+} @else {
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <p class="form__note">{{ t().contact.requiredNote }}</p>
+
+    @if (submitted() && form.invalid) {
+      <p class="form__alert" role="alert">{{ t().contact.errors.summary }}</p>
+    }
+    @if (status() === 'error') {
+      <p class="form__alert" role="alert">{{ t().contact.errors.submit }}</p>
+    }
+
+    <!-- Reason for contact -->
+    <div class="field field--full" [class.is-invalid]="showError('inquiryType')">
+      <label for="cf-inquiryType">{{ t().contact.fields.inquiryType }} <span aria-hidden="true">*</span></label>
+      <select
+        id="cf-inquiryType"
+        formControlName="inquiryType"
+        required
+        [attr.aria-invalid]="showError('inquiryType') || null"
+        [attr.aria-describedby]="describedBy('inquiryType')"
+      >
+        <option value="" disabled>{{ t().contact.selectPlaceholder }}</option>
+        @for (type of inquiryTypes; track type) {
+          <option [value]="type">{{ t().contact.inquiryTypes[type] }}</option>
+        }
+      </select>
+      @if (showError('inquiryType')) {
+        <p id="cf-inquiryType-error" class="field__error">{{ errorFor('inquiryType') }}</p>
+      }
+    </div>
+
+    <!-- Text inputs -->
+    @for (field of textFields; track field.name) {
+      <div class="field" [class.is-invalid]="showError(field.name)">
+        <label [for]="'cf-' + field.name">
+          {{ t().contact.fields[field.name] }} <span aria-hidden="true">*</span>
+        </label>
+        <input
+          [id]="'cf-' + field.name"
+          [type]="field.type"
+          [formControlName]="field.name"
+          [attr.autocomplete]="field.autocomplete"
+          required
+          [attr.aria-invalid]="showError(field.name) || null"
+          [attr.aria-describedby]="describedBy(field.name)"
+        />
+        @if (showError(field.name)) {
+          <p [id]="'cf-' + field.name + '-error'" class="field__error">{{ errorFor(field.name) }}</p>
+        }
+      </div>
+    }
+
+    <!-- Business type -->
+    <div class="field" [class.is-invalid]="showError('businessType')">
+      <label for="cf-businessType">{{ t().contact.fields.businessType }} <span aria-hidden="true">*</span></label>
+      <select
+        id="cf-businessType"
+        formControlName="businessType"
+        required
+        [attr.aria-invalid]="showError('businessType') || null"
+        [attr.aria-describedby]="describedBy('businessType')"
+      >
+        <option value="" disabled>{{ t().contact.selectPlaceholder }}</option>
+        @for (type of businessTypes; track type) {
+          <option [value]="type">{{ t().contact.businessTypes[type] }}</option>
+        }
+      </select>
+      @if (showError('businessType')) {
+        <p id="cf-businessType-error" class="field__error">{{ errorFor('businessType') }}</p>
+      }
+    </div>
+
+    <!-- Volume (optional) -->
+    <div class="field" [class.is-invalid]="showError('volume')">
+      <label for="cf-volume">{{ t().contact.fields.volume }}</label>
+      <input
+        id="cf-volume"
+        type="text"
+        formControlName="volume"
+        [attr.aria-invalid]="showError('volume') || null"
+        [attr.aria-describedby]="describedBy('volume', 'cf-volume-hint')"
+      />
+      <p id="cf-volume-hint" class="field__hint">{{ t().contact.fields.volumeHint }}</p>
+      @if (showError('volume')) {
+        <p id="cf-volume-error" class="field__error">{{ errorFor('volume') }}</p>
+      }
+    </div>
+
+    <!-- Interest -->
+    <fieldset
+      class="field field--full"
+      [class.is-invalid]="showError('interest')"
+      [attr.aria-describedby]="describedBy('interest')"
+    >
+      <legend>{{ t().contact.fields.interest }} <span aria-hidden="true">*</span></legend>
+      <div class="choices">
+        @for (option of interests; track option) {
+          <label class="choice" [for]="'cf-interest-' + option">
+            <input
+              type="radio"
+              [id]="'cf-interest-' + option"
+              formControlName="interest"
+              [value]="option"
+              required
+            />
+            <span>{{ t().contact.interests[option] }}</span>
+          </label>
+        }
+      </div>
+      @if (showError('interest')) {
+        <p id="cf-interest-error" class="field__error">{{ errorFor('interest') }}</p>
+      }
+    </fieldset>
+
+    <!-- Message -->
+    <div class="field field--full" [class.is-invalid]="showError('message')">
+      <label for="cf-message">{{ t().contact.fields.message }} <span aria-hidden="true">*</span></label>
+      <textarea
+        id="cf-message"
+        formControlName="message"
+        rows="5"
+        required
+        [attr.aria-invalid]="showError('message') || null"
+        [attr.aria-describedby]="describedBy('message')"
+      ></textarea>
+      @if (showError('message')) {
+        <p id="cf-message-error" class="field__error">{{ errorFor('message') }}</p>
+      }
+    </div>
+
+    <!-- Honeypot (hidden from people and assistive tech) -->
+    <div class="hp" aria-hidden="true">
+      <label for="cf-website">{{ t().contact.fields.honeypot }}</label>
+      <input id="cf-website" type="text" formControlName="website" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <!-- Consent -->
+    <div class="field field--full" [class.is-invalid]="showError('consent')">
+      <div class="consent">
+        <input
+          id="cf-consent"
+          type="checkbox"
+          formControlName="consent"
+          required
+          [attr.aria-invalid]="showError('consent') || null"
+          [attr.aria-describedby]="describedBy('consent')"
+        />
+        <label for="cf-consent">{{ t().contact.fields.consent }} <span aria-hidden="true">*</span></label>
+      </div>
+      @if (privacyUrl; as url) {
+        <a class="consent__link" [href]="url" target="_blank" rel="noopener">{{ t().contact.fields.privacyLink }}</a>
+      }
+      @if (showError('consent')) {
+        <p id="cf-consent-error" class="field__error">{{ errorFor('consent') }}</p>
+      }
+    </div>
+
+    <div class="form__actions field--full">
+      <button type="submit" class="btn btn--primary" [attr.aria-disabled]="status() === 'sending' || null">
+        {{ status() === 'sending' ? t().contact.sending : t().contact.submit }}
+      </button>
+      @if (showMailto) {
+        <p class="form__mailto">
+          {{ t().contact.mailtoLabel }}
+          <a [attr.href]="mailtoHref()">{{ t().contact.mailtoLink }}</a>
+        </p>
+      }
+    </div>
+  </form>
+}

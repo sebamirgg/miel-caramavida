@@ -1,0 +1,64 @@
+<footer class="footer honeycomb honeycomb--dark honeycomb--wide">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <p class="footer__name">{{ t().brand.name }}</p>
+      <p class="footer__tagline">{{ t().brand.tagline }}</p>
+      <p class="footer__text">{{ t().footer.tagline }}</p>
+    </div>
+
+    <div>
+      <h2 class="footer__title">{{ t().footer.contactTitle }}</h2>
+      <dl class="footer__contact">
+        <div>
+          <dt>{{ t().footer.emailLabel }}</dt>
+          <dd>
+            @if (contact.email; as email) {
+              <a [href]="'mailto:' + email">{{ email }}</a>
+            } @else {
+              {{ pending }}
+            }
+          </dd>
+        </div>
+        <div>
+          <dt>{{ t().footer.phoneLabel }}</dt>
+          <dd>
+            @if (contact.phone; as phone) {
+              <a [href]="'tel:' + phone">{{ phone }}</a>
+            } @else {
+              {{ pending }}
+            }
+          </dd>
+        </div>
+        <div>
+          <dt>{{ t().footer.addressLabel }}</dt>
+          <dd>{{ contact.address ?? pending }}</dd>
+        </div>
+      </dl>
+    </div>
+
+    <nav [attr.aria-label]="t().a11y.footerNav">
+      <h2 class="footer__title">{{ t().footer.sectionsTitle }}</h2>
+      <ul class="footer__links" role="list">
+        @for (item of navItems; track item.key) {
+          <li>
+            <a [routerLink]="[]" [fragment]="item.fragment">{{ t().nav[item.key] }}</a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <div>
+      <h2 class="footer__title">{{ t().footer.languageTitle }}</h2>
+      <app-language-switcher variant="list" />
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© {{ year }} {{ t().brand.company }}. {{ t().footer.rights }}</p>
+    @if (privacyUrl; as url) {
+      <a [href]="url">{{ t().footer.privacy }}</a>
+    } @else {
+      <span>{{ t().footer.privacy }} {{ pending }}</span>
+    }
+  </div>
+</footer>

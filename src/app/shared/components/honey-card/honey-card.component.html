@@ -1,0 +1,30 @@
+<article class="card" [attr.aria-labelledby]="headingId()">
+  <app-media class="card__media" [asset]="visual().image" [alt]="honey().imageAlt" [tone]="id()" ratio="4 / 3" />
+
+  <div class="card__body">
+    <p class="card__tree">{{ honey().tree }}</p>
+    <h3 class="card__name" [id]="headingId()">{{ honey().name }}</h3>
+    <p class="card__description">{{ honey().description }}</p>
+
+    <dl class="card__facts">
+      <div>
+        <dt>{{ labels().species }}</dt>
+        <dd class="card__species">{{ honey().species }}</dd>
+      </div>
+      <div>
+        <dt>{{ labels().flowering }}</dt>
+        <dd>{{ honey().flowering }}</dd>
+      </div>
+      <div>
+        <dt>{{ labels().origin }}</dt>
+        <dd>{{ honey().origin }}</dd>
+      </div>
+      <div>
+        <dt>{{ labels().sensory }}</dt>
+        <dd>{{ honey().sensory }}</dd>
+      </div>
+    </dl>
+
+    <p class="card__availability">{{ availability() }}</p>
+  </div>
+</article>

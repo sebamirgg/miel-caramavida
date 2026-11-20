@@ -1,0 +1,76 @@
+.explainers {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.explainer {
+  color: var(--color-text-on-dark-muted);
+}
+
+.explainer__title {
+  margin-bottom: var(--space-4);
+  color: var(--color-text-on-dark);
+  font-size: var(--text-2xl);
+}
+
+.nbi {
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+  border-left: 2px solid var(--gold-300);
+  background: rgb(252 248 239 / 5%);
+  color: var(--color-text-on-dark-muted);
+}
+
+.nbi__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.nbi__title {
+  color: var(--color-text-on-dark);
+  font-size: var(--text-xl);
+}
+
+.nbi__badge {
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--gold-300);
+  border-radius: 999px;
+  color: var(--gold-300);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.studies__title {
+  margin: var(--space-8) 0 var(--space-6);
+  font-size: var(--text-2xl);
+}
+
+.studies {
+  display: grid;
+  gap: var(--space-5);
+  list-style: none;
+}
+
+.studies app-study-card {
+  height: 100%;
+}
+
+.disclaimer {
+  max-width: 44rem;
+  margin-top: var(--space-7);
+  color: var(--color-text-on-dark-muted);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+@media (min-width: 56rem) {
+  .explainers,
+  .studies {
+    grid-template-columns: 1fr 1fr;
+  }
+}

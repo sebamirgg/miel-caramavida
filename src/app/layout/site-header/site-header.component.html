@@ -1,0 +1,56 @@
+<header class="header">
+  <div class="container header__bar">
+    <!-- [PENDIENTE: reemplazar el logotipo tipográfico por el logo definitivo (SVG)] -->
+    <a
+      class="brand"
+      [routerLink]="[]"
+      [fragment]="homeFragment"
+      [attr.aria-label]="t().a11y.homeLink"
+      [title]="t().brand.logoPending"
+      (click)="closeMenu()"
+    >
+      <span class="brand__name">{{ t().brand.name }}</span>
+      <span class="brand__tagline">{{ t().brand.tagline }}</span>
+    </a>
+
+    <button
+      #toggle
+      class="menu-toggle"
+      type="button"
+      aria-controls="primary-nav"
+      [attr.aria-expanded]="menuOpen()"
+      [attr.aria-label]="menuOpen() ? t().a11y.closeMenu : t().a11y.openMenu"
+      (click)="toggleMenu()"
+    >
+      <span class="menu-toggle__icon" [class.is-open]="menuOpen()" aria-hidden="true"></span>
+    </button>
+
+    <nav
+      id="primary-nav"
+      class="nav"
+      [class.is-open]="menuOpen()"
+      [attr.aria-label]="t().a11y.mainNav"
+    >
+      <ul class="nav__list" role="list">
+        @for (item of navItems; track item.key) {
+          <li>
+            <a class="nav__link" [routerLink]="[]" [fragment]="item.fragment" (click)="closeMenu()">
+              {{ t().nav[item.key] }}
+            </a>
+          </li>
+        }
+      </ul>
+
+      <div class="nav__aside">
+        <app-language-switcher (changed)="closeMenu()" />
+        <app-cta-link
+          [label]="t().cta.requestDossier"
+          variant="accent"
+          intent="dossier"
+          [small]="true"
+          (activated)="closeMenu()"
+        />
+      </div>
+    </nav>
+  </div>
+</header>

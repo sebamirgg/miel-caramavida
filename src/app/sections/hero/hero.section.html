@@ -1,0 +1,50 @@
+<section [id]="id" class="hero on-dark" tabindex="-1" aria-labelledby="hero-title">
+  <div class="hero__media">
+    @if (media.videoSrc; as videoSrc) {
+      <video
+        #video
+        class="hero__video"
+        [src]="videoSrc"
+        [attr.poster]="media.src"
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      ></video>
+    } @else {
+      <app-media [asset]="media" [alt]="t().hero.mediaLabel" tone="dark" [fill]="true" [priority]="true" />
+    }
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__comb" aria-hidden="true"></div>
+  </div>
+
+  <div class="container hero__content">
+    <p class="eyebrow">{{ t().hero.eyebrow }}</p>
+    <h1 id="hero-title" class="hero__title">
+      <span class="hero__brand">{{ t().brand.name }}</span>
+      <span class="hero__tagline">{{ t().brand.tagline }}</span>
+    </h1>
+    <p class="hero__lead">{{ t().hero.lead }}</p>
+    <p class="hero__statement">{{ t().hero.statement }}</p>
+
+    <div class="hero__ctas">
+      <app-cta-link [label]="t().cta.becomeDistributor" variant="accent" intent="distribution" />
+      <app-cta-link [label]="t().cta.requestCommercialDossier" variant="outline" intent="dossier" />
+    </div>
+  </div>
+
+  <div class="container hero__footer">
+    <p class="hero__honeys">{{ t().hero.honeysIntro }}</p>
+    <h2 class="visually-hidden">{{ t().hero.pillarsTitle }}</h2>
+    <ol class="pillars" role="list">
+      @for (pillar of t().hero.pillars; track $index) {
+        <li class="pillar">
+          <span class="pillar__index hex-badge" aria-hidden="true">0{{ $index + 1 }}</span>
+          <h3 class="pillar__title">{{ pillar.title }}</h3>
+          <p class="pillar__text">{{ pillar.text }}</p>
+        </li>
+      }
+    </ol>
+  </div>
+</section>

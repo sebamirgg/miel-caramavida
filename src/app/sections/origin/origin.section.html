@@ -1,0 +1,28 @@
+<section [id]="id" class="section honeycomb honeycomb--left" tabindex="-1" aria-labelledby="origin-title">
+  <div class="container origin">
+    <div class="origin__text">
+      <header appReveal>
+        <p class="eyebrow">{{ t().origin.eyebrow }}</p>
+        <h2 id="origin-title" class="section-title">{{ t().origin.title }}</h2>
+        <hr class="rule" />
+        <p class="origin__intro">{{ t().origin.intro }}</p>
+        <p class="origin__body">{{ t().origin.body }}</p>
+      </header>
+
+      <ul class="features" role="list">
+        @for (feature of t().origin.features; track $index) {
+          <li class="feature" appReveal>
+            <h3 class="feature__title">{{ feature.title }}</h3>
+            <p class="feature__text">{{ feature.text }}</p>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <app-origin-map class="origin__map" [labels]="t().origin.map" appReveal />
+  </div>
+
+  <div class="container">
+    <app-media class="origin__landscape" [asset]="landscape" [alt]="t().origin.landscapeAlt" appReveal />
+  </div>
+</section>

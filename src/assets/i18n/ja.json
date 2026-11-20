@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "Caramávida — The Essence of Nahuelbuta | チリ産ウルモ・ティネオはちみつ",
+    "description": "チリ・ナウエルブタ山脈のカラマビダ（Caramávida）で採れるプレミアムなウルモとティネオのはちみつ。産地、在来植物、科学的研究。輸入業者・販売代理店向けのご案内。",
+    "ogLocale": "ja_JP",
+    "ogLocaleAlternate": "es_CL"
+  },
+  "brand": {
+    "name": "Caramávida",
+    "tagline": "The Essence of Nahuelbuta",
+    "company": "Bosques y Praderas",
+    "logoPending": "[未定：Caramávida 正式ロゴ]"
+  },
+  "language": {
+    "name": "日本語"
+  },
+  "a11y": {
+    "skipToContent": "本文へスキップ",
+    "mainNav": "メインナビゲーション",
+    "footerNav": "フッターナビゲーション",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "languageSelector": "言語を選択",
+    "changeLanguage": "言語を変更",
+    "homeLink": "Caramávida、ページの先頭へ",
+    "currentLanguage": "現在の言語",
+    "pendingImage": "画像準備中",
+    "exampleImage": "サンプル画像",
+    "photoCredit": "写真"
+  },
+  "nav": {
+    "home": "ホーム",
+    "origin": "産地",
+    "honeys": "はちみつ",
+    "science": "科学と品質",
+    "story": "私たちの歩み",
+    "partnerships": "パートナーシップ"
+  },
+  "cta": {
+    "requestDossier": "資料請求",
+    "becomeDistributor": "販売代理店になる",
+    "requestCommercialDossier": "商談資料を請求",
+    "contactSales": "営業チームに問い合わせる",
+    "requestSamples": "サンプルを請求"
+  },
+  "hero": {
+    "eyebrow": "ウルモ＆ティネオのはちみつ · チリ",
+    "lead": "チリ南部の原生林が育む、類まれなはちみつ。",
+    "statement": "唯一無二の土地。比類なき植物相。私たちはウルモとティネオのはちみつの個性を、科学によって探究しています。",
+    "honeysIntro": "ウルモとティネオ。二つの在来樹木、二つの花、そして個性豊かな二つのはちみつ。ナウエルブタ山脈のカラマビダで採蜜しています。",
+    "mediaLabel": "サンプル画像：ナウエルブタ山脈の夕暮れとチリマツ",
+    "pillarsTitle": "私たちの柱",
+    "pillars": [
+      {
+        "title": "テロワール",
+        "text": "アラウコ県ナウエルブタ山脈、カラマビダ。明確に特定された産地です。"
+      },
+      {
+        "title": "植物学的な独自性",
+        "text": "チリ南部の温帯林に自生する樹木の花蜜。"
+      },
+      {
+        "title": "研究",
+        "text": "ラ・フロンテラ大学（UFRO）と共同で、はちみつの成分を研究しています。"
+      }
+    ]
+  },
+  "origin": {
+    "eyebrow": "01 — The Origin",
+    "title": "産地",
+    "intro": "カラマビダは、チリ南部アラウコ県の海岸山脈の一部であるナウエルブタ山脈に位置しています。ここでは今も原生林が景観と一年のリズムを形づくっています。",
+    "body": "[未定：カラマビダに関する最終テキスト — おおよその標高、主な森林タイプ、気候、地域コミュニティとの関わり。未確認の数値は記載しないこと。]",
+    "landscapeAlt": "サンプル画像：ナウエルブタ山脈の夕日",
+    "features": [
+      {
+        "title": "原生林",
+        "text": "ウルモとティネオが育つ、チリ南部の温帯林の植物相。[未定：カラマビダに見られる植物群落の説明]"
+      },
+      {
+        "title": "生物多様性",
+        "text": "ナウエルブタは、チリでも固有種の割合が特に高い地域のひとつです。[未定：表現と出典の確認]"
+      },
+      {
+        "title": "花の季節",
+        "text": "それぞれのはちみつは、短く限られた開花期から生まれます。[未定：カラマビダにおけるウルモとティネオの検証済み開花カレンダー]"
+      }
+    ],
+    "map": {
+      "title": "チリ・アラウコ県ナウエルブタ山脈におけるカラマビダのイメージ地図",
+      "ocean": "太平洋",
+      "coastalRange": "ナウエルブタ山脈",
+      "andes": "アンデス山脈",
+      "province": "アラウコ県",
+      "zone": "Caramávida",
+      "country": "チリ",
+      "caption": "イメージ地図（縮尺は正確ではありません）。養蜂場の位置は表示していません。"
+    }
+  },
+  "honeys": {
+    "eyebrow": "02 — Our Honeys",
+    "title": "はちみつ",
+    "intro": "ひとつの土地から生まれた二つの単花蜜。それぞれに固有の植物的・官能的な個性があります。",
+    "labels": {
+      "species": "植物種",
+      "flowering": "開花期",
+      "origin": "産地",
+      "sensory": "官能特性"
+    },
+    "availability": "商業的な供給状況は確認中です。",
+    "items": [
+      {
+        "id": "ulmo",
+        "name": "ウルモはちみつ",
+        "tree": "ウルモ",
+        "species": "Eucryphia cordifolia [未定：花粉分析による確認]",
+        "flowering": "[未定：カラマビダで確認された開花月]",
+        "origin": "チリ、アラウコ県、ナウエルブタ山脈、カラマビダ",
+        "sensory": "[未定：検証済みの官能特性 — 色、香り、風味、テクスチャー]",
+        "description": "[未定：ウルモはちみつの短い紹介文]",
+        "imageAlt": "サンプル画像：ウルモの花にとまるミツバチ"
+      },
+      {
+        "id": "tineo",
+        "name": "ティネオはちみつ",
+        "tree": "ティネオ",
+        "species": "Weinmannia trichosperma [未定：花粉分析による確認]",
+        "flowering": "[未定：カラマビダで確認された開花月]",
+        "origin": "チリ、アラウコ県、ナウエルブタ山脈、カラマビダ",
+        "sensory": "[未定：検証済みの官能特性 — 色、香り、風味、テクスチャー]",
+        "description": "[未定：ティネオはちみつの短い紹介文]",
+        "imageAlt": "サンプル画像：ティネオの花"
+      }
+    ]
+  },
+  "science": {
+    "eyebrow": "03 — Science & Quality",
+    "title": "科学と品質",
+    "intro": "私たちは、はちみつの独自性を言葉で語るだけでなく、証明したいと考えています。",
+    "bioactivityTitle": "生物活性とは？",
+    "bioactivityText": "食品科学における生物活性とは、特定の化合物が生体システムと相互作用する能力を指します。はちみつの研究では、ポリフェノール類の含有量や抗酸化活性などの指標を実験室で分析するのが一般的です。これらの値は各はちみつの植物的・地理的な起源によって異なるため、私たちは推測ではなく測定を重視しています。",
+    "researchTitle": "ラ・フロンテラ大学との共同研究",
+    "researchText": "カラマビダは、チリのラ・フロンテラ大学（UFRO）と共同で、はちみつの特性評価研究を行っています。[未定：共同研究の正式名称、担当チームまたは研究室、研究範囲の確認]",
+    "nbi": {
+      "title": "NBI指数",
+      "badge": "開発中の独自指数",
+      "text": "[未定：NBI指数の説明]。これは現在開発中の独自指数です。標準化された尺度ではなく、他のはちみつの格付け尺度と同等のものではありません。"
+    },
+    "disclaimer": "本セクションの情報は一般的な情報提供を目的としたものであり、健康効果を表示するものではありません。",
+    "studiesTitle": "研究結果",
+    "studyLabels": {
+      "date": "日付",
+      "methodology": "手法",
+      "sample": "試料",
+      "laboratory": "研究機関",
+      "download": "報告書をダウンロード（PDF）",
+      "downloadUnavailable": "報告書は準備中です"
+    },
+    "studies": [
+      {
+        "id": "study-ulmo-01",
+        "title": "[未定：研究タイトル — ウルモはちみつ]",
+        "date": "[未定：日付]",
+        "methodology": "[未定：手法]",
+        "sample": "[未定：試料と採蜜シーズンの説明]",
+        "laboratory": "[未定：担当研究機関]",
+        "reportUrl": null
+      },
+      {
+        "id": "study-tineo-01",
+        "title": "[未定：研究タイトル — ティネオはちみつ]",
+        "date": "[未定：日付]",
+        "methodology": "[未定：手法]",
+        "sample": "[未定：試料と採蜜シーズンの説明]",
+        "laboratory": "[未定：担当研究機関]",
+        "reportUrl": null
+      }
+    ]
+  },
+  "story": {
+    "eyebrow": "04 — Our Story",
+    "title": "私たちの歩み",
+    "intro": "Bosques y Praderas は、カラマビダを手がける企業です。[未定：会社の成り立ち、創業年、創業の想い]",
+    "blocks": [
+      {
+        "title": "人々",
+        "text": "[未定：チームのメンバーと関わる養蜂家の家族]"
+      },
+      {
+        "title": "養蜂の技",
+        "text": "[未定：カラマビダでの養蜂 — 季節、採蜜、抽出]"
+      },
+      {
+        "title": "管理の取り組み",
+        "text": "[未定：蜂群と環境の管理方法。認証は有効かつ確認済みのもののみ記載]"
+      },
+      {
+        "title": "Bosques y Praderas とカラマビダ",
+        "text": "[未定：会社とカラマビダの土地との関わり]"
+      }
+    ],
+    "galleryTitle": "ドキュメンタリー記録",
+    "gallery": [
+      "サンプル画像：巣箱を点検する養蜂家",
+      "サンプル画像：ウルモの花",
+      "サンプル画像：ティネオの葉",
+      "サンプル画像：ナウエルブタ山脈のチリマツ",
+      "サンプル画像：巣枠の蜜蓋を切る作業",
+      "サンプル画像：蜜蓋で封じられた巣"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "05 — Trade & Partnerships",
+    "title": "国際パートナーシップ",
+    "intro": "産地、真正性、そして根拠を重んじる輸入業者、販売代理店、営業代理人の皆さまを求めています。",
+    "valueTitle": "提供価値",
+    "value": [
+      {
+        "title": "明確な産地",
+        "text": "特定の土地、ナウエルブタ山脈カラマビダのはちみつ。[未定：トレーサビリティ体制の詳細]"
+      },
+      {
+        "title": "植物による差別化",
+        "text": "ウルモとティネオ、チリ南部に自生する二つの樹種。"
+      },
+      {
+        "title": "継続的な研究",
+        "text": "ラ・フロンテラ大学との共同による、はちみつの特性評価。"
+      },
+      {
+        "title": "生産者との直接取引",
+        "text": "不要な中間業者を介さず、生産者と直接お取引いただけます。"
+      }
+    ],
+    "formatsTitle": "荷姿",
+    "formats": [
+      "[未定：バルク荷姿]",
+      "[未定：小売用荷姿]",
+      "[未定：その他の荷姿 — 業務用、サンプル]"
+    ],
+    "marketsTitle": "対象市場",
+    "markets": [
+      "欧州連合",
+      "[未定：その他の重点市場]"
+    ]
+  },
+  "contact": {
+    "title": "パートナーシップのご相談",
+    "intro": "フォームにご記入いただければ、営業チームよりご連絡いたします。商談資料のご請求も承ります。",
+    "requiredNote": "* の付いた項目は必須です。",
+    "fields": {
+      "inquiryType": "お問い合わせ内容",
+      "name": "氏名",
+      "company": "会社名",
+      "country": "国・地域",
+      "email": "会社のメールアドレス",
+      "businessType": "業種",
+      "interest": "関心のある商品",
+      "volume": "想定取引量（任意）",
+      "volumeHint": "例：年間のキログラム数またはトン数。",
+      "message": "メッセージ",
+      "consent": "本お問い合わせへの回答のため、プライバシーポリシーに従って個人情報が取り扱われることに同意します。",
+      "privacyLink": "プライバシーポリシーを見る",
+      "honeypot": "この欄には入力しないでください"
+    },
+    "selectPlaceholder": "選択してください",
+    "inquiryTypes": {
+      "dossier": "商談資料の請求",
+      "distribution": "販売・輸入",
+      "samples": "サンプルの請求",
+      "other": "その他"
+    },
+    "businessTypes": {
+      "importer": "輸入業者",
+      "distributor": "販売代理店",
+      "agent": "営業代理人",
+      "retail": "専門小売店",
+      "foodservice": "業務用 / HoReCa",
+      "other": "その他"
+    },
+    "interests": {
+      "ulmo": "ウルモ",
+      "tineo": "ティネオ",
+      "both": "両方"
+    },
+    "errors": {
+      "required": "この項目は必須です。",
+      "email": "有効なメールアドレスを入力してください。",
+      "corporateEmail": "会社のメールアドレスをご利用ください（無料メールサービスは不可）。",
+      "minlength": "入力内容が短すぎます。",
+      "maxlength": "入力内容が長すぎます。",
+      "consent": "続行するにはプライバシーポリシーに同意してください。",
+      "summary": "入力内容に誤りがあります。該当する項目をご確認ください。",
+      "submit": "送信できませんでした。もう一度お試しいただくか、メールでご連絡ください。"
+    },
+    "submit": "送信する",
+    "sending": "送信中…",
+    "success": {
+      "title": "お問い合わせありがとうございます",
+      "text": "お問い合わせを受け付けました。営業チームより追ってご連絡いたします。",
+      "again": "別のお問い合わせを送信"
+    },
+    "mailtoLabel": "メールソフトをご利用の場合",
+    "mailtoLink": "この内容をメールで送信",
+    "mailtoSubject": "Caramávida 商談のお問い合わせ"
+  },
+  "footer": {
+    "tagline": "チリ・ナウエルブタの原生林から生まれたウルモとティネオのはちみつ。",
+    "contactTitle": "会社連絡先",
+    "emailLabel": "メール",
+    "phoneLabel": "電話",
+    "addressLabel": "住所",
+    "sectionsTitle": "セクション",
+    "languageTitle": "言語",
+    "privacy": "プライバシーポリシー",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "Caramávida — The Essence of Nahuelbuta | Ulmo- und Tineo-Honig aus Chile",
+    "description": "Premium-Honig von Ulmo und Tineo aus Caramávida, Nahuelbuta-Gebirge, Chile. Herkunft, heimische Flora und wissenschaftliche Forschung. Informationen für Importeure und Distributoren.",
+    "ogLocale": "de_DE",
+    "ogLocaleAlternate": "es_CL"
+  },
+  "brand": {
+    "name": "Caramávida",
+    "tagline": "The Essence of Nahuelbuta",
+    "company": "Bosques y Praderas",
+    "logoPending": "[AUSSTEHEND: endgültiges Caramávida-Logo]"
+  },
+  "language": {
+    "name": "Deutsch"
+  },
+  "a11y": {
+    "skipToContent": "Zum Inhalt springen",
+    "mainNav": "Hauptnavigation",
+    "footerNav": "Fußzeilennavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "languageSelector": "Sprache auswählen",
+    "changeLanguage": "Sprache ändern",
+    "homeLink": "Caramávida, zurück zum Anfang",
+    "currentLanguage": "aktuelle Sprache",
+    "pendingImage": "Bild ausstehend",
+    "exampleImage": "Beispielbild",
+    "photoCredit": "Foto"
+  },
+  "nav": {
+    "home": "Start",
+    "origin": "Herkunft",
+    "honeys": "Unsere Honige",
+    "science": "Wissenschaft & Qualität",
+    "story": "Unsere Geschichte",
+    "partnerships": "Partnerschaften"
+  },
+  "cta": {
+    "requestDossier": "Dossier anfordern",
+    "becomeDistributor": "Distributor werden",
+    "requestCommercialDossier": "Handelsdossier anfordern",
+    "contactSales": "Vertriebsteam kontaktieren",
+    "requestSamples": "Muster anfordern"
+  },
+  "hero": {
+    "eyebrow": "Ulmo- & Tineo-Honig · Chile",
+    "lead": "Außergewöhnliche Honige aus den Urwäldern Südchiles.",
+    "statement": "Ein einzigartiges Gebiet. Eine außergewöhnliche Flora. Ulmo- und Tineo-Honige, deren Besonderheit wir wissenschaftlich erforschen.",
+    "honeysIntro": "Ulmo und Tineo: zwei heimische Bäume, zwei Blüten, zwei Honige mit eigenem Charakter – geerntet in Caramávida, im Nahuelbuta-Gebirge.",
+    "mediaLabel": "Beispielbild: Araukarie bei Sonnenuntergang im Nahuelbuta-Gebirge",
+    "pillarsTitle": "Unsere Säulen",
+    "pillars": [
+      {
+        "title": "Herkunft",
+        "text": "Caramávida, Nahuelbuta-Gebirge, Provinz Arauco. Ein präziser, klar abgegrenzter Ursprung."
+      },
+      {
+        "title": "Botanische Einzigartigkeit",
+        "text": "Nektar heimischer Arten des gemäßigten Regenwalds Südchiles."
+      },
+      {
+        "title": "Forschung",
+        "text": "Wir untersuchen die Zusammensetzung unserer Honige gemeinsam mit der Universidad de La Frontera (UFRO)."
+      }
+    ]
+  },
+  "origin": {
+    "eyebrow": "01 — The Origin",
+    "title": "Unsere Herkunft",
+    "intro": "Caramávida liegt im Nahuelbuta-Gebirge, einem Teil der chilenischen Küstenkordillere in der Provinz Arauco im Süden Chiles. Hier prägt der heimische Wald noch immer die Landschaft und den Rhythmus des Jahres.",
+    "body": "[AUSSTEHEND: endgültiger Text über Caramávida — ungefähre Höhenlage, vorherrschender Waldtyp, Klima und Beziehung zu den lokalen Gemeinschaften. Keine unbestätigten Zahlen.]",
+    "landscapeAlt": "Beispielbild: Sonnenuntergang über dem Nahuelbuta-Gebirge",
+    "features": [
+      {
+        "title": "Heimischer Wald",
+        "text": "Flora des gemäßigten Waldes Südchiles, Heimat der Ulmo- und Tineo-Bäume. [AUSSTEHEND: in Caramávida vorkommende Pflanzengesellschaften beschreiben]"
+      },
+      {
+        "title": "Biodiversität",
+        "text": "Nahuelbuta gehört zu den Regionen mit dem höchsten Endemismus Chiles. [AUSSTEHEND: Formulierung und Quelle prüfen]"
+      },
+      {
+        "title": "Blühsaison",
+        "text": "Jeder Honig entsteht in einem kurzen, spezifischen Blühfenster. [AUSSTEHEND: geprüfter Blühkalender für Ulmo und Tineo in Caramávida]"
+      }
+    ],
+    "map": {
+      "title": "Illustrative Karte von Caramávida im Nahuelbuta-Gebirge, Provinz Arauco, Chile",
+      "ocean": "Pazifischer Ozean",
+      "coastalRange": "Nahuelbuta-Gebirge",
+      "andes": "Anden",
+      "province": "Provinz Arauco",
+      "zone": "Caramávida",
+      "country": "Chile",
+      "caption": "Illustrative Karte, nicht maßstabsgetreu. Standorte der Bienenstände werden nicht angezeigt."
+    }
+  },
+  "honeys": {
+    "eyebrow": "02 — Our Honeys",
+    "title": "Unsere Honige",
+    "intro": "Zwei Sortenhonige aus einem einzigen Gebiet, jeder mit eigener botanischer und sensorischer Identität.",
+    "labels": {
+      "species": "Botanische Art",
+      "flowering": "Blütezeit",
+      "origin": "Herkunft",
+      "sensory": "Sensorisches Profil"
+    },
+    "availability": "Kommerzielle Verfügbarkeit vorbehaltlich Bestätigung.",
+    "items": [
+      {
+        "id": "ulmo",
+        "name": "Ulmo-Honig",
+        "tree": "Ulmo",
+        "species": "Eucryphia cordifolia [AUSSTEHEND: durch melissopalynologische Analyse bestätigen]",
+        "flowering": "[AUSSTEHEND: bestätigte Blütemonate in Caramávida]",
+        "origin": "Caramávida, Nahuelbuta-Gebirge, Provinz Arauco, Chile",
+        "sensory": "[AUSSTEHEND: geprüftes sensorisches Profil — Farbe, Aroma, Geschmack und Textur]",
+        "description": "[AUSSTEHEND: kurze Vorstellung des Ulmo-Honigs]",
+        "imageAlt": "Beispielbild: Honigbiene auf einer Ulmo-Blüte"
+      },
+      {
+        "id": "tineo",
+        "name": "Tineo-Honig",
+        "tree": "Tineo",
+        "species": "Weinmannia trichosperma [AUSSTEHEND: durch melissopalynologische Analyse bestätigen]",
+        "flowering": "[AUSSTEHEND: bestätigte Blütemonate in Caramávida]",
+        "origin": "Caramávida, Nahuelbuta-Gebirge, Provinz Arauco, Chile",
+        "sensory": "[AUSSTEHEND: geprüftes sensorisches Profil — Farbe, Aroma, Geschmack und Textur]",
+        "description": "[AUSSTEHEND: kurze Vorstellung des Tineo-Honigs]",
+        "imageAlt": "Beispielbild: Tineo-Blüten"
+      }
+    ]
+  },
+  "science": {
+    "eyebrow": "03 — Science & Quality",
+    "title": "Wissenschaft & Qualität",
+    "intro": "Die Besonderheit unserer Honige soll nachgewiesen und nicht nur beschrieben werden.",
+    "bioactivityTitle": "Was ist Bioaktivität?",
+    "bioactivityText": "In der Lebensmittelwissenschaft bezeichnet Bioaktivität die Fähigkeit bestimmter Verbindungen, mit biologischen Systemen zu interagieren. Bei Honig untersucht die Forschung im Labor typischerweise Parameter wie den Gehalt an phenolischen Verbindungen oder die antioxidative Aktivität. Diese Werte hängen von der botanischen und geografischen Herkunft jedes Honigs ab – deshalb messen wir sie, statt sie anzunehmen.",
+    "researchTitle": "Forschung mit der Universidad de La Frontera",
+    "researchText": "Caramávida führt gemeinsam mit der Universidad de La Frontera (UFRO), Chile, Studien zur Charakterisierung seiner Honige durch. [AUSSTEHEND: offizielle Bezeichnung der Zusammenarbeit, verantwortliches Team oder Labor und Umfang der Studien bestätigen]",
+    "nbi": {
+      "title": "NBI-Index",
+      "badge": "Eigener Index in Entwicklung",
+      "text": "[AUSSTEHEND: Beschreibung des NBI-Index]. Es handelt sich um einen eigenen, derzeit in Entwicklung befindlichen Index. Er ist keine standardisierte Skala und nicht mit anderen Klassifizierungsskalen für Honig gleichzusetzen."
+    },
+    "disclaimer": "Die Informationen in diesem Abschnitt dienen der allgemeinen Information und stellen keine gesundheitsbezogene Angabe dar.",
+    "studiesTitle": "Studienergebnisse",
+    "studyLabels": {
+      "date": "Datum",
+      "methodology": "Methodik",
+      "sample": "Probe",
+      "laboratory": "Labor",
+      "download": "Bericht herunterladen (PDF)",
+      "downloadUnavailable": "Bericht noch nicht verfügbar"
+    },
+    "studies": [
+      {
+        "id": "study-ulmo-01",
+        "title": "[AUSSTEHEND: Studientitel — Ulmo-Honig]",
+        "date": "[AUSSTEHEND: Datum]",
+        "methodology": "[AUSSTEHEND: Methodik]",
+        "sample": "[AUSSTEHEND: Beschreibung von Probe und Saison]",
+        "laboratory": "[AUSSTEHEND: verantwortliches Labor]",
+        "reportUrl": null
+      },
+      {
+        "id": "study-tineo-01",
+        "title": "[AUSSTEHEND: Studientitel — Tineo-Honig]",
+        "date": "[AUSSTEHEND: Datum]",
+        "methodology": "[AUSSTEHEND: Methodik]",
+        "sample": "[AUSSTEHEND: Beschreibung von Probe und Saison]",
+        "laboratory": "[AUSSTEHEND: verantwortliches Labor]",
+        "reportUrl": null
+      }
+    ]
+  },
+  "story": {
+    "eyebrow": "04 — Our Story",
+    "title": "Unsere Geschichte",
+    "intro": "Bosques y Praderas ist das Unternehmen hinter Caramávida. [AUSSTEHEND: Ursprung des Unternehmens, Gründungsjahr und Motivation]",
+    "blocks": [
+      {
+        "title": "Die Menschen",
+        "text": "[AUSSTEHEND: wer zum Team gehört und welche Imkerfamilien beteiligt sind]"
+      },
+      {
+        "title": "Das Imkerhandwerk",
+        "text": "[AUSSTEHEND: wie in Caramávida geimkert wird — Jahreszeiten, Ernte und Schleudern]"
+      },
+      {
+        "title": "Bewirtschaftung",
+        "text": "[AUSSTEHEND: Völker- und Umweltmanagement. Zertifizierungen nur nennen, wenn gültig und geprüft]"
+      },
+      {
+        "title": "Bosques y Praderas und Caramávida",
+        "text": "[AUSSTEHEND: Beziehung des Unternehmens zum Gebiet Caramávida]"
+      }
+    ],
+    "galleryTitle": "Dokumentation",
+    "gallery": [
+      "Beispielbild: Imker bei der Kontrolle eines Bienenstocks",
+      "Beispielbild: Ulmo-Blüten",
+      "Beispielbild: Tineo-Laub",
+      "Beispielbild: Araukarien im Nahuelbuta-Gebirge",
+      "Beispielbild: Entdeckeln einer Honigwabe",
+      "Beispielbild: Wabe mit verdeckeltem Honig"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "05 — Trade & Partnerships",
+    "title": "Internationale Partnerschaften",
+    "intro": "Wir suchen Importeure, Distributoren und Handelsvertreter, die Herkunft, Authentizität und Nachweisbarkeit schätzen.",
+    "valueTitle": "Wertversprechen",
+    "value": [
+      {
+        "title": "Definierte Herkunft",
+        "text": "Honige aus einem bestimmten Gebiet: Caramávida, Nahuelbuta-Gebirge. [AUSSTEHEND: Details zum Rückverfolgbarkeitssystem]"
+      },
+      {
+        "title": "Botanische Differenzierung",
+        "text": "Ulmo und Tineo, zwei in Südchile heimische Arten."
+      },
+      {
+        "title": "Laufende Forschung",
+        "text": "Charakterisierung unserer Honige in Zusammenarbeit mit der Universidad de La Frontera."
+      },
+      {
+        "title": "Direkte Beziehung",
+        "text": "Direkte Zusammenarbeit mit dem Erzeuger, ohne unnötige Zwischenhändler."
+      }
+    ],
+    "formatsTitle": "Formate",
+    "formats": [
+      "[AUSSTEHEND: Großgebinde]",
+      "[AUSSTEHEND: Einzelhandelsformat]",
+      "[AUSSTEHEND: weitere Formate — Food Service, Muster]"
+    ],
+    "marketsTitle": "Zielmärkte",
+    "markets": [
+      "Europäische Union",
+      "[AUSSTEHEND: weitere Prioritätsmärkte]"
+    ]
+  },
+  "contact": {
+    "title": "Sprechen wir über eine Partnerschaft",
+    "intro": "Füllen Sie das Formular aus, unser Vertriebsteam meldet sich bei Ihnen. Sie können auch unser Handelsdossier anfordern.",
+    "requiredNote": "Mit * gekennzeichnete Felder sind Pflichtfelder.",
+    "fields": {
+      "inquiryType": "Anlass der Kontaktaufnahme",
+      "name": "Vor- und Nachname",
+      "company": "Unternehmen",
+      "country": "Land",
+      "email": "Geschäftliche E-Mail",
+      "businessType": "Geschäftsart",
+      "interest": "Interesse",
+      "volume": "Geschätztes Volumen (optional)",
+      "volumeHint": "Zum Beispiel: kg oder Tonnen pro Jahr.",
+      "message": "Nachricht",
+      "consent": "Ich bin damit einverstanden, dass meine Daten zur Beantwortung dieser Anfrage gemäß der Datenschutzerklärung verarbeitet werden.",
+      "privacyLink": "Datenschutzerklärung ansehen",
+      "honeypot": "Dieses Feld leer lassen"
+    },
+    "selectPlaceholder": "Bitte auswählen",
+    "inquiryTypes": {
+      "dossier": "Handelsdossier anfordern",
+      "distribution": "Vertrieb oder Import",
+      "samples": "Muster anfordern",
+      "other": "Sonstiges"
+    },
+    "businessTypes": {
+      "importer": "Importeur",
+      "distributor": "Distributor",
+      "agent": "Handelsvertreter",
+      "retail": "Fachhandel",
+      "foodservice": "Food Service / HoReCa",
+      "other": "Sonstiges"
+    },
+    "interests": {
+      "ulmo": "Ulmo",
+      "tineo": "Tineo",
+      "both": "Beide"
+    },
+    "errors": {
+      "required": "Dieses Feld ist erforderlich.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "corporateEmail": "Bitte verwenden Sie eine geschäftliche E-Mail-Adresse (keinen kostenlosen Anbieter).",
+      "minlength": "Der Text ist zu kurz.",
+      "maxlength": "Der Text ist zu lang.",
+      "consent": "Bitte akzeptieren Sie die Datenschutzerklärung, um fortzufahren.",
+      "summary": "Bitte prüfen Sie die markierten Felder.",
+      "submit": "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie uns eine E-Mail."
+    },
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "success": {
+      "title": "Vielen Dank für Ihr Interesse",
+      "text": "Wir haben Ihre Anfrage erhalten. Unser Vertriebsteam meldet sich in Kürze bei Ihnen.",
+      "again": "Weitere Anfrage senden"
+    },
+    "mailtoLabel": "Lieber per E-Mail-Programm?",
+    "mailtoLink": "Diese Angaben per E-Mail senden",
+    "mailtoSubject": "Handelsanfrage Caramávida"
+  },
+  "footer": {
+    "tagline": "Ulmo- und Tineo-Honig aus den Urwäldern von Nahuelbuta, Chile.",
+    "contactTitle": "Unternehmenskontakt",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresse",
+    "sectionsTitle": "Bereiche",
+    "languageTitle": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

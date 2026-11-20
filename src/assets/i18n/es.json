@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "Caramávida — The Essence of Nahuelbuta | Mieles de Ulmo y Tineo de Chile",
+    "description": "Mieles premium de Ulmo y Tineo de Caramávida, cordillera de Nahuelbuta, Chile. Origen, flora nativa e investigación científica. Información para importadores y distribuidores.",
+    "ogLocale": "es_CL",
+    "ogLocaleAlternate": "en_US"
+  },
+  "brand": {
+    "name": "Caramávida",
+    "tagline": "The Essence of Nahuelbuta",
+    "company": "Bosques y Praderas",
+    "logoPending": "[PENDIENTE: logo definitivo de Caramávida]"
+  },
+  "language": {
+    "name": "Español"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "mainNav": "Navegación principal",
+    "footerNav": "Navegación del pie de página",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "languageSelector": "Seleccionar idioma",
+    "changeLanguage": "Cambiar idioma",
+    "homeLink": "Caramávida, volver al inicio",
+    "currentLanguage": "idioma actual",
+    "pendingImage": "Imagen pendiente",
+    "exampleImage": "Imagen de ejemplo",
+    "photoCredit": "Foto"
+  },
+  "nav": {
+    "home": "Inicio",
+    "origin": "Territorio",
+    "honeys": "Nuestras mieles",
+    "science": "Ciencia y calidad",
+    "story": "Nuestra historia",
+    "partnerships": "Alianzas"
+  },
+  "cta": {
+    "requestDossier": "Solicitar dossier",
+    "becomeDistributor": "Conviértase en distribuidor",
+    "requestCommercialDossier": "Solicitar dossier comercial",
+    "contactSales": "Contactar al equipo comercial",
+    "requestSamples": "Solicitar muestras"
+  },
+  "hero": {
+    "eyebrow": "Mieles de Ulmo y Tineo · Chile",
+    "lead": "Mieles excepcionales de los bosques nativos del sur de Chile.",
+    "statement": "Un territorio único. Una flora extraordinaria. Mieles de Ulmo y Tineo cuya singularidad investigamos a través de la ciencia.",
+    "honeysIntro": "Ulmo y Tineo: dos árboles nativos, dos floraciones, dos mieles de carácter propio, cosechadas en Caramávida, en la cordillera de Nahuelbuta.",
+    "mediaLabel": "Imagen de ejemplo: araucaria al atardecer en la cordillera de Nahuelbuta",
+    "pillarsTitle": "Nuestros pilares",
+    "pillars": [
+      {
+        "title": "Territorio",
+        "text": "Caramávida, cordillera de Nahuelbuta, Provincia de Arauco. Un origen preciso y acotado."
+      },
+      {
+        "title": "Singularidad botánica",
+        "text": "Néctar de especies nativas del bosque templado del sur de Chile."
+      },
+      {
+        "title": "Investigación",
+        "text": "Estudiamos la composición de nuestras mieles junto a la Universidad de La Frontera (UFRO)."
+      }
+    ]
+  },
+  "origin": {
+    "eyebrow": "01 — The Origin",
+    "title": "Nuestro territorio",
+    "intro": "Caramávida se ubica en la cordillera de Nahuelbuta, la cordillera de la Costa en la Provincia de Arauco, al sur de Chile. Aquí el bosque nativo aún define el paisaje y el ritmo del año.",
+    "body": "[PENDIENTE: texto final sobre Caramávida — altitud aproximada, tipo de bosque predominante, clima y relación con las comunidades locales. Evitar cifras no verificadas.]",
+    "landscapeAlt": "Imagen de ejemplo: atardecer sobre la cordillera de Nahuelbuta",
+    "features": [
+      {
+        "title": "Bosque nativo",
+        "text": "Flora del bosque templado del sur de Chile, donde crecen el Ulmo y el Tineo. [PENDIENTE: describir las formaciones vegetales presentes en Caramávida]"
+      },
+      {
+        "title": "Biodiversidad",
+        "text": "Nahuelbuta forma parte de una de las regiones de mayor endemismo de Chile. [PENDIENTE: validar redacción y fuente citada]"
+      },
+      {
+        "title": "Estacionalidad floral",
+        "text": "Cada miel nace de una ventana de floración breve y específica. [PENDIENTE: calendario floral validado para Ulmo y Tineo en Caramávida]"
+      }
+    ],
+    "map": {
+      "title": "Mapa ilustrativo de Caramávida en la cordillera de Nahuelbuta, Provincia de Arauco, Chile",
+      "ocean": "Océano Pacífico",
+      "coastalRange": "Cordillera de Nahuelbuta",
+      "andes": "Cordillera de los Andes",
+      "province": "Provincia de Arauco",
+      "zone": "Caramávida",
+      "country": "Chile",
+      "caption": "Mapa ilustrativo, no a escala. No indica ubicaciones de apiarios."
+    }
+  },
+  "honeys": {
+    "eyebrow": "02 — Our Honeys",
+    "title": "Nuestras mieles",
+    "intro": "Dos mieles monoflorales de un mismo territorio, cada una con una identidad botánica y sensorial propia.",
+    "labels": {
+      "species": "Especie botánica",
+      "flowering": "Temporada de floración",
+      "origin": "Origen",
+      "sensory": "Perfil sensorial"
+    },
+    "availability": "Disponibilidad comercial sujeta a confirmación.",
+    "items": [
+      {
+        "id": "ulmo",
+        "name": "Miel de Ulmo",
+        "tree": "Ulmo",
+        "species": "Eucryphia cordifolia [PENDIENTE: validar con análisis melisopalinológico]",
+        "flowering": "[PENDIENTE: meses de floración confirmados en Caramávida]",
+        "origin": "Caramávida, cordillera de Nahuelbuta, Provincia de Arauco, Chile",
+        "sensory": "[PENDIENTE: perfil sensorial validado — color, aroma, sabor y textura]",
+        "description": "[PENDIENTE: texto breve de presentación de la miel de Ulmo]",
+        "imageAlt": "Imagen de ejemplo: abeja sobre una flor de ulmo"
+      },
+      {
+        "id": "tineo",
+        "name": "Miel de Tineo",
+        "tree": "Tineo",
+        "species": "Weinmannia trichosperma [PENDIENTE: validar con análisis melisopalinológico]",
+        "flowering": "[PENDIENTE: meses de floración confirmados en Caramávida]",
+        "origin": "Caramávida, cordillera de Nahuelbuta, Provincia de Arauco, Chile",
+        "sensory": "[PENDIENTE: perfil sensorial validado — color, aroma, sabor y textura]",
+        "description": "[PENDIENTE: texto breve de presentación de la miel de Tineo]",
+        "imageAlt": "Imagen de ejemplo: flores de tineo"
+      }
+    ]
+  },
+  "science": {
+    "eyebrow": "03 — Science & Quality",
+    "title": "Ciencia y calidad",
+    "intro": "Queremos que la singularidad de nuestras mieles pueda demostrarse, no solo describirse.",
+    "bioactivityTitle": "¿Qué es la bioactividad?",
+    "bioactivityText": "En ciencia de alimentos, se llama bioactividad a la capacidad de ciertos compuestos de interactuar con sistemas biológicos. En la miel, la investigación suele analizar parámetros como el contenido de compuestos fenólicos o la actividad antioxidante en laboratorio. Estos valores dependen del origen botánico y geográfico de cada miel, y por eso los medimos en lugar de suponerlos.",
+    "researchTitle": "Investigación con la Universidad de La Frontera",
+    "researchText": "Caramávida desarrolla estudios de caracterización de sus mieles junto a la Universidad de La Frontera (UFRO). [PENDIENTE: confirmar denominación formal de la colaboración, equipo o laboratorio a cargo y alcance de los estudios]",
+    "nbi": {
+      "title": "Índice NBI",
+      "badge": "Índice propio en desarrollo",
+      "text": "[PENDIENTE: descripción del índice NBI]. Se trata de un índice propio, actualmente en desarrollo. No es una escala estandarizada ni es equivalente a otras escalas de clasificación de mieles."
+    },
+    "disclaimer": "La información de esta sección tiene carácter divulgativo y no constituye una declaración de propiedades saludables.",
+    "studiesTitle": "Resultados de estudios",
+    "studyLabels": {
+      "date": "Fecha",
+      "methodology": "Metodología",
+      "sample": "Muestra",
+      "laboratory": "Laboratorio",
+      "download": "Descargar informe (PDF)",
+      "downloadUnavailable": "Informe aún no disponible"
+    },
+    "studies": [
+      {
+        "id": "study-ulmo-01",
+        "title": "[PENDIENTE: título del estudio — miel de Ulmo]",
+        "date": "[PENDIENTE: fecha]",
+        "methodology": "[PENDIENTE: metodología empleada]",
+        "sample": "[PENDIENTE: descripción de la muestra y temporada]",
+        "laboratory": "[PENDIENTE: laboratorio responsable]",
+        "reportUrl": null
+      },
+      {
+        "id": "study-tineo-01",
+        "title": "[PENDIENTE: título del estudio — miel de Tineo]",
+        "date": "[PENDIENTE: fecha]",
+        "methodology": "[PENDIENTE: metodología empleada]",
+        "sample": "[PENDIENTE: descripción de la muestra y temporada]",
+        "laboratory": "[PENDIENTE: laboratorio responsable]",
+        "reportUrl": null
+      }
+    ]
+  },
+  "story": {
+    "eyebrow": "04 — Our Story",
+    "title": "Nuestra historia",
+    "intro": "Bosques y Praderas es la empresa detrás de Caramávida. [PENDIENTE: origen de la empresa, año de inicio y motivación]",
+    "blocks": [
+      {
+        "title": "Las personas",
+        "text": "[PENDIENTE: quiénes forman el equipo y las familias apicultoras vinculadas]"
+      },
+      {
+        "title": "El oficio apícola",
+        "text": "[PENDIENTE: cómo se trabaja la apicultura en Caramávida — temporadas, cosecha y extracción]"
+      },
+      {
+        "title": "Prácticas de manejo",
+        "text": "[PENDIENTE: prácticas de manejo de colmenas y del entorno. Mencionar certificaciones solo si están vigentes y verificadas]"
+      },
+      {
+        "title": "Bosques y Praderas y Caramávida",
+        "text": "[PENDIENTE: relación de la empresa con el territorio de Caramávida]"
+      }
+    ],
+    "galleryTitle": "Registro documental",
+    "gallery": [
+      "Imagen de ejemplo: apicultor revisando una colmena",
+      "Imagen de ejemplo: flores de ulmo",
+      "Imagen de ejemplo: follaje de tineo",
+      "Imagen de ejemplo: araucarias en la cordillera de Nahuelbuta",
+      "Imagen de ejemplo: desoperculado de un marco de miel",
+      "Imagen de ejemplo: panal con miel operculada"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "05 — Trade & Partnerships",
+    "title": "Alianzas internacionales",
+    "intro": "Buscamos importadores, distribuidores y representantes que valoren el origen, la autenticidad y la evidencia.",
+    "valueTitle": "Propuesta de valor",
+    "value": [
+      {
+        "title": "Origen definido",
+        "text": "Mieles de un territorio específico: Caramávida, cordillera de Nahuelbuta. [PENDIENTE: detalle del sistema de trazabilidad]"
+      },
+      {
+        "title": "Diferenciación botánica",
+        "text": "Ulmo y Tineo, dos especies nativas del sur de Chile."
+      },
+      {
+        "title": "Investigación en curso",
+        "text": "Caracterización de nuestras mieles en colaboración con la Universidad de La Frontera."
+      },
+      {
+        "title": "Relación directa",
+        "text": "Trato directo con el productor, sin intermediarios innecesarios."
+      }
+    ],
+    "formatsTitle": "Formatos",
+    "formats": [
+      "[PENDIENTE: formato a granel]",
+      "[PENDIENTE: formato retail]",
+      "[PENDIENTE: otros formatos — food service, muestras]"
+    ],
+    "marketsTitle": "Mercados de interés",
+    "markets": [
+      "Unión Europea",
+      "[PENDIENTE: otros mercados prioritarios]"
+    ]
+  },
+  "contact": {
+    "title": "Hablemos de una alianza",
+    "intro": "Complete el formulario y nuestro equipo comercial le responderá. También puede solicitar el dossier comercial.",
+    "requiredNote": "Los campos marcados con * son obligatorios.",
+    "fields": {
+      "inquiryType": "Motivo de contacto",
+      "name": "Nombre y apellido",
+      "company": "Empresa",
+      "country": "País",
+      "email": "Correo corporativo",
+      "businessType": "Tipo de negocio",
+      "interest": "Interés",
+      "volume": "Volumen estimado (opcional)",
+      "volumeHint": "Por ejemplo: kg o toneladas por año.",
+      "message": "Mensaje",
+      "consent": "Acepto que mis datos sean tratados para responder a esta solicitud, según la política de privacidad.",
+      "privacyLink": "Ver política de privacidad",
+      "honeypot": "No completar este campo"
+    },
+    "selectPlaceholder": "Seleccione una opción",
+    "inquiryTypes": {
+      "dossier": "Solicitar dossier comercial",
+      "distribution": "Distribución o importación",
+      "samples": "Solicitar muestras",
+      "other": "Otro"
+    },
+    "businessTypes": {
+      "importer": "Importador",
+      "distributor": "Distribuidor",
+      "agent": "Representante comercial",
+      "retail": "Retail especializado",
+      "foodservice": "Food service / HoReCa",
+      "other": "Otro"
+    },
+    "interests": {
+      "ulmo": "Ulmo",
+      "tineo": "Tineo",
+      "both": "Ambas"
+    },
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "email": "Ingrese un correo electrónico válido.",
+      "corporateEmail": "Utilice un correo corporativo (no de proveedores gratuitos).",
+      "minlength": "El texto es demasiado corto.",
+      "maxlength": "El texto es demasiado largo.",
+      "consent": "Debe aceptar la política de privacidad para continuar.",
+      "summary": "Revise los campos marcados para continuar.",
+      "submit": "No pudimos enviar su solicitud. Intente nuevamente o escríbanos por correo."
+    },
+    "submit": "Enviar solicitud",
+    "sending": "Enviando…",
+    "success": {
+      "title": "Gracias por su interés",
+      "text": "Hemos recibido su solicitud. Nuestro equipo comercial le responderá a la brevedad.",
+      "again": "Enviar otra solicitud"
+    },
+    "mailtoLabel": "¿Prefiere su cliente de correo?",
+    "mailtoLink": "Enviar estos datos por email",
+    "mailtoSubject": "Solicitud comercial Caramávida"
+  },
+  "footer": {
+    "tagline": "Mieles de Ulmo y Tineo de los bosques nativos de Nahuelbuta, Chile.",
+    "contactTitle": "Contacto institucional",
+    "emailLabel": "Correo",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
+    "sectionsTitle": "Secciones",
+    "languageTitle": "Idioma",
+    "privacy": "Política de privacidad",
+    "rights": "Todos los derechos reservados."
+  }
+}

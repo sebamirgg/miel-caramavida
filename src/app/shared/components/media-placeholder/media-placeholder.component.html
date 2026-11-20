@@ -1,0 +1,23 @@
+@if (asset().src; as src) {
+  <img [ngSrc]="src" fill [alt]="alt()" [priority]="priority()" />
+
+  @if (asset().example || asset().credit) {
+    <p class="credit" [class.credit--top]="fill()">
+      @if (asset().example) {
+        <span class="credit__badge" aria-hidden="true">{{ t().a11y.exampleImage }}</span>
+      }
+      @if (asset().credit; as credit) {
+        <span class="credit__text">
+          {{ t().a11y.photoCredit }}:
+          <a [href]="credit.sourceUrl" target="_blank" rel="noopener">{{ credit.author }}</a>
+          ·
+          <a [href]="credit.licenseUrl" target="_blank" rel="noopener license">{{ credit.license }}</a>
+        </span>
+      }
+    </p>
+  }
+} @else {
+  <div class="placeholder" role="img" [attr.aria-label]="alt()">
+    <span class="placeholder__label" aria-hidden="true">{{ alt() }}</span>
+  </div>
+}

@@ -1,0 +1,126 @@
+:host {
+  position: relative;
+  display: inline-block;
+}
+
+/* ----- Trigger ----- */
+.lang__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 0.85rem;
+  border: 1px solid rgb(240 197 96 / 35%);
+  border-radius: 999px;
+  background: transparent;
+  font-size: var(--text-sm);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+
+.lang__trigger:hover,
+.lang__trigger[aria-expanded='true'] {
+  border-color: var(--gold-300);
+  background: rgb(240 197 96 / 8%);
+}
+
+svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+}
+
+.lang__globe {
+  color: var(--gold-300);
+}
+
+.lang__chevron {
+  width: 0.75rem;
+  transition: transform 0.2s var(--ease);
+}
+
+[aria-expanded='true'] .lang__chevron {
+  transform: rotate(180deg);
+}
+
+/* ----- Dropdown panel ----- */
+.lang__panel {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  z-index: 60;
+  display: grid;
+  min-width: 13rem;
+  padding: 0.4rem;
+  border: 1px solid rgb(240 197 96 / 30%);
+  border-radius: var(--radius-lg);
+  background: var(--brown-950);
+  box-shadow: 0 18px 40px -12px rgb(0 0 0 / 60%);
+  list-style: none;
+}
+
+.lang__panel[hidden] {
+  display: none;
+}
+
+/* ----- Options (shared by both variants) ----- */
+.lang__list {
+  display: grid;
+  gap: 0.15rem;
+  list-style: none;
+}
+
+.lang__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  color: var(--color-text-on-dark-muted);
+  text-decoration: none;
+}
+
+.lang__option:hover,
+.lang__option:focus-visible {
+  background: rgb(240 197 96 / 10%);
+  color: var(--color-text-on-dark);
+}
+
+.lang__option[aria-current='page'] {
+  color: var(--gold-300);
+}
+
+.lang__option[aria-current='page'] .lang__name::after {
+  content: '';
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.52rem;
+  margin-left: 0.6rem;
+  clip-path: var(--hex-clip);
+  background: currentColor;
+  vertical-align: 0.1em;
+}
+
+.lang__code {
+  font-size: var(--text-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+:host(.is-list) .lang__option {
+  padding-inline: 0;
+}
+
+/* Inside the mobile menu the panel opens inline. */
+@media (max-width: 74.99rem) {
+  .lang__panel {
+    position: static;
+    margin-top: 0.6rem;
+  }
+}

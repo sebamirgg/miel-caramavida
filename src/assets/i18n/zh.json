@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "Caramávida — The Essence of Nahuelbuta | 智利乌尔莫蜂蜜与蒂内奥蜂蜜",
+    "description": "来自智利纳韦尔布塔山脉 Caramávida 的高端乌尔莫蜂蜜与蒂内奥蜂蜜。产地、原生植物与科学研究。面向进口商与经销商的信息。",
+    "ogLocale": "zh_CN",
+    "ogLocaleAlternate": "es_CL"
+  },
+  "brand": {
+    "name": "Caramávida",
+    "tagline": "The Essence of Nahuelbuta",
+    "company": "Bosques y Praderas",
+    "logoPending": "[待补充：Caramávida 正式标志]"
+  },
+  "language": {
+    "name": "中文"
+  },
+  "a11y": {
+    "skipToContent": "跳至主要内容",
+    "mainNav": "主导航",
+    "footerNav": "页脚导航",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "languageSelector": "选择语言",
+    "changeLanguage": "切换语言",
+    "homeLink": "Caramávida，返回顶部",
+    "currentLanguage": "当前语言",
+    "pendingImage": "图片待补充",
+    "exampleImage": "示例图片",
+    "photoCredit": "摄影"
+  },
+  "nav": {
+    "home": "首页",
+    "origin": "产地",
+    "honeys": "我们的蜂蜜",
+    "science": "科学与品质",
+    "story": "我们的故事",
+    "partnerships": "合作"
+  },
+  "cta": {
+    "requestDossier": "索取资料",
+    "becomeDistributor": "成为经销商",
+    "requestCommercialDossier": "索取商务资料",
+    "contactSales": "联系销售团队",
+    "requestSamples": "索取样品"
+  },
+  "hero": {
+    "eyebrow": "乌尔莫与蒂内奥蜂蜜 · 智利",
+    "lead": "来自智利南部原始森林的非凡蜂蜜。",
+    "statement": "独一无二的土地，非同寻常的植物群。我们以科学研究乌尔莫与蒂内奥蜂蜜的独特之处。",
+    "honeysIntro": "乌尔莫与蒂内奥：两种原生树木，两次花期，两种个性鲜明的蜂蜜，采收于纳韦尔布塔山脉的 Caramávida。",
+    "mediaLabel": "示例图片：纳韦尔布塔山脉日落时分的智利南洋杉",
+    "pillarsTitle": "我们的支柱",
+    "pillars": [
+      {
+        "title": "产地",
+        "text": "Caramávida，纳韦尔布塔山脉，阿劳科省。精确而明确的产地。"
+      },
+      {
+        "title": "植物独特性",
+        "text": "花蜜来自智利南部温带森林的原生物种。"
+      },
+      {
+        "title": "科学研究",
+        "text": "我们与拉弗龙特拉大学（UFRO）共同研究蜂蜜的成分。"
+      }
+    ]
+  },
+  "origin": {
+    "eyebrow": "01 — The Origin",
+    "title": "我们的产地",
+    "intro": "Caramávida 位于纳韦尔布塔山脉——智利南部阿劳科省海岸山脉的一部分。在这里，原生森林依然塑造着地貌与四季的节奏。",
+    "body": "[待补充：关于 Caramávida 的最终文案——大致海拔、主要森林类型、气候以及与当地社区的关系。避免使用未经核实的数据。]",
+    "landscapeAlt": "示例图片：纳韦尔布塔山脉上空的日落",
+    "features": [
+      {
+        "title": "原生森林",
+        "text": "智利南部温带森林的植物群，乌尔莫树与蒂内奥树生长于此。[待补充：描述 Caramávida 的植物群落]"
+      },
+      {
+        "title": "生物多样性",
+        "text": "纳韦尔布塔是智利特有物种最丰富的地区之一。[待补充：核实措辞及引用来源]"
+      },
+      {
+        "title": "花期季节性",
+        "text": "每一种蜂蜜都诞生于短暂而特定的花期。[待补充：经核实的 Caramávida 乌尔莫与蒂内奥花期日历]"
+      }
+    ],
+    "map": {
+      "title": "示意地图：智利阿劳科省纳韦尔布塔山脉中的 Caramávida",
+      "ocean": "太平洋",
+      "coastalRange": "纳韦尔布塔山脉",
+      "andes": "安第斯山脉",
+      "province": "阿劳科省",
+      "zone": "Caramávida",
+      "country": "智利",
+      "caption": "示意地图，未按比例绘制。不显示蜂场位置。"
+    }
+  },
+  "honeys": {
+    "eyebrow": "02 — Our Honeys",
+    "title": "我们的蜂蜜",
+    "intro": "同一片土地上的两种单花蜜，各自拥有独特的植物与感官特征。",
+    "labels": {
+      "species": "植物学名",
+      "flowering": "花期",
+      "origin": "产地",
+      "sensory": "感官特征"
+    },
+    "availability": "商业供应情况有待确认。",
+    "items": [
+      {
+        "id": "ulmo",
+        "name": "乌尔莫蜂蜜",
+        "tree": "乌尔莫",
+        "species": "Eucryphia cordifolia [待补充：经蜂蜜花粉分析确认]",
+        "flowering": "[待补充：Caramávida 经确认的花期月份]",
+        "origin": "智利阿劳科省纳韦尔布塔山脉 Caramávida",
+        "sensory": "[待补充：经验证的感官特征——颜色、香气、风味与质地]",
+        "description": "[待补充：乌尔莫蜂蜜简介]",
+        "imageAlt": "示例图片：乌尔莫花上的蜜蜂"
+      },
+      {
+        "id": "tineo",
+        "name": "蒂内奥蜂蜜",
+        "tree": "蒂内奥",
+        "species": "Weinmannia trichosperma [待补充：经蜂蜜花粉分析确认]",
+        "flowering": "[待补充：Caramávida 经确认的花期月份]",
+        "origin": "智利阿劳科省纳韦尔布塔山脉 Caramávida",
+        "sensory": "[待补充：经验证的感官特征——颜色、香气、风味与质地]",
+        "description": "[待补充：蒂内奥蜂蜜简介]",
+        "imageAlt": "示例图片：蒂内奥花"
+      }
+    ]
+  },
+  "science": {
+    "eyebrow": "03 — Science & Quality",
+    "title": "科学与品质",
+    "intro": "我们希望蜂蜜的独特之处能够被证明，而不仅仅是被描述。",
+    "bioactivityTitle": "什么是生物活性？",
+    "bioactivityText": "在食品科学中，生物活性是指某些化合物与生物系统相互作用的能力。对于蜂蜜，研究通常在实验室中分析酚类化合物含量或抗氧化活性等参数。这些数值取决于每种蜂蜜的植物来源与地理来源，因此我们选择测量，而非假设。",
+    "researchTitle": "与拉弗龙特拉大学的研究合作",
+    "researchText": "Caramávida 与智利拉弗龙特拉大学（UFRO）合作开展蜂蜜特性研究。[待补充：确认合作的正式名称、负责团队或实验室以及研究范围]",
+    "nbi": {
+      "title": "NBI 指数",
+      "badge": "自主研发中的指数",
+      "text": "[待补充：NBI 指数说明]。这是一项目前仍在研发中的自主指数，并非标准化等级，也不等同于其他蜂蜜分级体系。"
+    },
+    "disclaimer": "本部分内容仅供一般科普参考，不构成任何健康声明。",
+    "studiesTitle": "研究结果",
+    "studyLabels": {
+      "date": "日期",
+      "methodology": "方法",
+      "sample": "样本",
+      "laboratory": "实验室",
+      "download": "下载报告（PDF）",
+      "downloadUnavailable": "报告尚未发布"
+    },
+    "studies": [
+      {
+        "id": "study-ulmo-01",
+        "title": "[待补充：研究标题——乌尔莫蜂蜜]",
+        "date": "[待补充：日期]",
+        "methodology": "[待补充：研究方法]",
+        "sample": "[待补充：样本及季节说明]",
+        "laboratory": "[待补充：负责实验室]",
+        "reportUrl": null
+      },
+      {
+        "id": "study-tineo-01",
+        "title": "[待补充：研究标题——蒂内奥蜂蜜]",
+        "date": "[待补充：日期]",
+        "methodology": "[待补充：研究方法]",
+        "sample": "[待补充：样本及季节说明]",
+        "laboratory": "[待补充：负责实验室]",
+        "reportUrl": null
+      }
+    ]
+  },
+  "story": {
+    "eyebrow": "04 — Our Story",
+    "title": "我们的故事",
+    "intro": "Bosques y Praderas 是 Caramávida 背后的公司。[待补充：公司起源、创立年份与初衷]",
+    "blocks": [
+      {
+        "title": "我们的团队",
+        "text": "[待补充：团队成员及参与的养蜂家庭]"
+      },
+      {
+        "title": "养蜂技艺",
+        "text": "[待补充：Caramávida 的养蜂方式——季节、采收与提取]"
+      },
+      {
+        "title": "管理实践",
+        "text": "[待补充：蜂群与环境管理实践。仅提及有效且经核实的认证]"
+      },
+      {
+        "title": "Bosques y Praderas 与 Caramávida",
+        "text": "[待补充：公司与 Caramávida 这片土地的关系]"
+      }
+    ],
+    "galleryTitle": "纪实影像",
+    "gallery": [
+      "示例图片：养蜂人检查蜂箱",
+      "示例图片：乌尔莫花",
+      "示例图片：蒂内奥枝叶",
+      "示例图片：纳韦尔布塔山脉的智利南洋杉",
+      "示例图片：为蜜脾割除蜡盖",
+      "示例图片：封盖蜜脾"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "05 — Trade & Partnerships",
+    "title": "国际合作",
+    "intro": "我们正在寻找重视产地、真实性与科学依据的进口商、经销商和商务代表。",
+    "valueTitle": "价值主张",
+    "value": [
+      {
+        "title": "明确的产地",
+        "text": "蜂蜜来自特定的土地：纳韦尔布塔山脉的 Caramávida。[待补充：溯源体系详情]"
+      },
+      {
+        "title": "植物差异化",
+        "text": "乌尔莫与蒂内奥，两种智利南部原生物种。"
+      },
+      {
+        "title": "持续的研究",
+        "text": "与拉弗龙特拉大学合作开展蜂蜜特性研究。"
+      },
+      {
+        "title": "直接合作",
+        "text": "与生产者直接合作，无多余中间环节。"
+      }
+    ],
+    "formatsTitle": "规格",
+    "formats": [
+      "[待补充：散装规格]",
+      "[待补充：零售规格]",
+      "[待补充：其他规格——餐饮渠道、样品]"
+    ],
+    "marketsTitle": "目标市场",
+    "markets": [
+      "欧盟",
+      "[待补充：其他重点市场]"
+    ]
+  },
+  "contact": {
+    "title": "洽谈合作",
+    "intro": "请填写表格，我们的销售团队将与您联系。您也可以索取我们的商务资料。",
+    "requiredNote": "标有 * 的字段为必填项。",
+    "fields": {
+      "inquiryType": "联系事由",
+      "name": "姓名",
+      "company": "公司",
+      "country": "国家/地区",
+      "email": "企业邮箱",
+      "businessType": "业务类型",
+      "interest": "感兴趣的产品",
+      "volume": "预计采购量（选填）",
+      "volumeHint": "例如：每年公斤数或吨数。",
+      "message": "留言",
+      "consent": "我同意根据隐私政策处理我的数据，以便回复本次咨询。",
+      "privacyLink": "查看隐私政策",
+      "honeypot": "请勿填写此字段"
+    },
+    "selectPlaceholder": "请选择",
+    "inquiryTypes": {
+      "dossier": "索取商务资料",
+      "distribution": "经销或进口",
+      "samples": "索取样品",
+      "other": "其他"
+    },
+    "businessTypes": {
+      "importer": "进口商",
+      "distributor": "经销商",
+      "agent": "商务代表",
+      "retail": "精品零售",
+      "foodservice": "餐饮渠道 / HoReCa",
+      "other": "其他"
+    },
+    "interests": {
+      "ulmo": "乌尔莫",
+      "tineo": "蒂内奥",
+      "both": "两者皆有"
+    },
+    "errors": {
+      "required": "此字段为必填项。",
+      "email": "请输入有效的电子邮箱地址。",
+      "corporateEmail": "请使用企业邮箱（非免费邮箱服务）。",
+      "minlength": "内容过短。",
+      "maxlength": "内容过长。",
+      "consent": "请接受隐私政策以继续。",
+      "summary": "请检查标记的字段。",
+      "submit": "无法发送您的请求。请重试或通过电子邮件联系我们。"
+    },
+    "submit": "提交咨询",
+    "sending": "正在发送…",
+    "success": {
+      "title": "感谢您的关注",
+      "text": "我们已收到您的咨询，销售团队将尽快与您联系。",
+      "again": "再次提交咨询"
+    },
+    "mailtoLabel": "希望使用邮件客户端？",
+    "mailtoLink": "通过电子邮件发送以上信息",
+    "mailtoSubject": "Caramávida 商务咨询"
+  },
+  "footer": {
+    "tagline": "来自智利纳韦尔布塔原始森林的乌尔莫与蒂内奥蜂蜜。",
+    "contactTitle": "公司联系方式",
+    "emailLabel": "邮箱",
+    "phoneLabel": "电话",
+    "addressLabel": "地址",
+    "sectionsTitle": "栏目",
+    "languageTitle": "语言",
+    "privacy": "隐私政策",
+    "rights": "保留所有权利。"
+  }
+}

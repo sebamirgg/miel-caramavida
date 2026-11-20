@@ -1,0 +1,33 @@
+<article class="study" [attr.aria-labelledby]="study().id + '-title'">
+  <h4 class="study__title" [id]="study().id + '-title'">{{ study().title }}</h4>
+
+  <dl class="study__meta">
+    <div>
+      <dt>{{ labels().date }}</dt>
+      <dd>{{ study().date }}</dd>
+    </div>
+    <div>
+      <dt>{{ labels().methodology }}</dt>
+      <dd>{{ study().methodology }}</dd>
+    </div>
+    <div>
+      <dt>{{ labels().sample }}</dt>
+      <dd>{{ study().sample }}</dd>
+    </div>
+    <div>
+      <dt>{{ labels().laboratory }}</dt>
+      <dd>{{ study().laboratory }}</dd>
+    </div>
+  </dl>
+
+  @if (study().reportUrl; as url) {
+    <a class="btn btn--outline study__action" [href]="url" download>
+      {{ labels().download }}
+      <span class="visually-hidden">: {{ study().title }}</span>
+    </a>
+  } @else {
+    <button class="btn btn--outline study__action" type="button" disabled>
+      {{ labels().downloadUnavailable }}
+    </button>
+  }
+</article>

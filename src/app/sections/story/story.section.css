@@ -1,0 +1,52 @@
+.blocks {
+  display: grid;
+  gap: var(--space-7) var(--space-8);
+  list-style: none;
+}
+
+.block {
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.block__title {
+  font-size: var(--text-2xl);
+}
+
+.block__text {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.gallery__title {
+  margin: var(--space-section) 0 var(--space-6);
+  font-size: var(--text-2xl);
+}
+
+/* Documentary gallery: simple columns keep each photo's own ratio. */
+.gallery {
+  columns: 1;
+  column-gap: var(--space-5);
+  list-style: none;
+}
+
+.gallery__item {
+  margin-bottom: var(--space-5);
+  break-inside: avoid;
+}
+
+@media (min-width: 40rem) {
+  .gallery {
+    columns: 2;
+  }
+}
+
+@media (min-width: 56rem) {
+  .blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+    columns: 3;
+  }
+}

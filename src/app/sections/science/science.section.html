@@ -1,0 +1,39 @@
+<section [id]="id" class="section section--dark on-dark honeycomb honeycomb--wide" tabindex="-1" aria-labelledby="science-title">
+  <div class="container">
+    <header class="section-header" appReveal>
+      <p class="eyebrow">{{ t().science.eyebrow }}</p>
+      <h2 id="science-title" class="section-title">{{ t().science.title }}</h2>
+      <p class="section-intro">{{ t().science.intro }}</p>
+    </header>
+
+    <div class="explainers">
+      <article class="explainer" appReveal>
+        <h3 class="explainer__title">{{ t().science.bioactivityTitle }}</h3>
+        <p>{{ t().science.bioactivityText }}</p>
+      </article>
+      <article class="explainer" appReveal>
+        <h3 class="explainer__title">{{ t().science.researchTitle }}</h3>
+        <p>{{ t().science.researchText }}</p>
+      </article>
+    </div>
+
+    <aside class="nbi" aria-labelledby="nbi-title" appReveal>
+      <div class="nbi__head">
+        <h3 id="nbi-title" class="nbi__title">{{ t().science.nbi.title }}</h3>
+        <span class="nbi__badge">{{ t().science.nbi.badge }}</span>
+      </div>
+      <p>{{ t().science.nbi.text }}</p>
+    </aside>
+
+    <h3 class="studies__title" appReveal>{{ t().science.studiesTitle }}</h3>
+    <ul class="studies" role="list">
+      @for (study of t().science.studies; track study.id) {
+        <li appReveal>
+          <app-study-card [study]="study" [labels]="t().science.studyLabels" />
+        </li>
+      }
+    </ul>
+
+    <p class="disclaimer">{{ t().science.disclaimer }}</p>
+  </div>
+</section>

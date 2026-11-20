@@ -1,0 +1,27 @@
+<section [id]="id" class="section" tabindex="-1" aria-labelledby="story-title">
+  <div class="container">
+    <header class="section-header" appReveal>
+      <p class="eyebrow">{{ t().story.eyebrow }}</p>
+      <h2 id="story-title" class="section-title">{{ t().story.title }}</h2>
+      <p class="section-intro">{{ t().story.intro }}</p>
+    </header>
+
+    <ul class="blocks" role="list">
+      @for (block of t().story.blocks; track $index) {
+        <li class="block" appReveal>
+          <h3 class="block__title">{{ block.title }}</h3>
+          <p class="block__text">{{ block.text }}</p>
+        </li>
+      }
+    </ul>
+
+    <h3 class="gallery__title" appReveal>{{ t().story.galleryTitle }}</h3>
+    <ul class="gallery" role="list">
+      @for (item of gallery(); track $index) {
+        <li class="gallery__item" appReveal>
+          <app-media [asset]="item.asset" [alt]="item.alt" />
+        </li>
+      }
+    </ul>
+  </div>
+</section>

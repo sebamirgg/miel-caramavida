@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "Caramávida — The Essence of Nahuelbuta | Ulmo & Tineo Honeys from Chile",
+    "description": "Premium Ulmo and Tineo honeys from Caramávida, Nahuelbuta mountain range, Chile. Origin, native flora and scientific research. Information for importers and distributors.",
+    "ogLocale": "en_US",
+    "ogLocaleAlternate": "es_CL"
+  },
+  "brand": {
+    "name": "Caramávida",
+    "tagline": "The Essence of Nahuelbuta",
+    "company": "Bosques y Praderas",
+    "logoPending": "[PENDING: final Caramávida logo]"
+  },
+  "language": {
+    "name": "English"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageSelector": "Select language",
+    "changeLanguage": "Change language",
+    "homeLink": "Caramávida, back to top",
+    "currentLanguage": "current language",
+    "pendingImage": "Image pending",
+    "exampleImage": "Example image",
+    "photoCredit": "Photo"
+  },
+  "nav": {
+    "home": "Home",
+    "origin": "The Origin",
+    "honeys": "Our Honeys",
+    "science": "Science & Quality",
+    "story": "Our Story",
+    "partnerships": "Partnerships"
+  },
+  "cta": {
+    "requestDossier": "Request dossier",
+    "becomeDistributor": "Become a distributor",
+    "requestCommercialDossier": "Request trade dossier",
+    "contactSales": "Contact our sales team",
+    "requestSamples": "Request samples"
+  },
+  "hero": {
+    "eyebrow": "Ulmo & Tineo honeys · Chile",
+    "lead": "Exceptional honeys from the native forests of southern Chile.",
+    "statement": "A unique territory. An extraordinary flora. Ulmo and Tineo honeys whose singularity we investigate through science.",
+    "honeysIntro": "Ulmo and Tineo: two native trees, two blossoms, two honeys with a character of their own, harvested in Caramávida, in the Nahuelbuta range.",
+    "mediaLabel": "Example image: araucaria tree at sunset in the Nahuelbuta range",
+    "pillarsTitle": "Our pillars",
+    "pillars": [
+      {
+        "title": "Territory",
+        "text": "Caramávida, Nahuelbuta range, Arauco Province. A precise, well-defined origin."
+      },
+      {
+        "title": "Botanical singularity",
+        "text": "Nectar from native species of southern Chile's temperate forest."
+      },
+      {
+        "title": "Research",
+        "text": "We study the composition of our honeys together with Universidad de La Frontera (UFRO)."
+      }
+    ]
+  },
+  "origin": {
+    "eyebrow": "01 — Nahuelbuta",
+    "title": "The Origin",
+    "intro": "Caramávida lies in the Nahuelbuta range, part of Chile's Coastal Mountain Range in the Province of Arauco, southern Chile. Here, native forest still shapes the landscape and the rhythm of the year.",
+    "body": "[PENDING: final text about Caramávida — approximate altitude, dominant forest type, climate and relationship with local communities. Avoid unverified figures.]",
+    "landscapeAlt": "Example image: sunset over the Nahuelbuta range",
+    "features": [
+      {
+        "title": "Native forest",
+        "text": "Flora of southern Chile's temperate forest, home to the Ulmo and Tineo trees. [PENDING: describe the plant communities present in Caramávida]"
+      },
+      {
+        "title": "Biodiversity",
+        "text": "Nahuelbuta is part of one of the regions with the highest endemism in Chile. [PENDING: validate wording and cited source]"
+      },
+      {
+        "title": "Floral seasonality",
+        "text": "Each honey comes from a brief and specific flowering window. [PENDING: validated floral calendar for Ulmo and Tineo in Caramávida]"
+      }
+    ],
+    "map": {
+      "title": "Illustrative map of Caramávida in the Nahuelbuta range, Arauco Province, Chile",
+      "ocean": "Pacific Ocean",
+      "coastalRange": "Nahuelbuta Range",
+      "andes": "Andes Mountains",
+      "province": "Arauco Province",
+      "zone": "Caramávida",
+      "country": "Chile",
+      "caption": "Illustrative map, not to scale. Apiary locations are not shown."
+    }
+  },
+  "honeys": {
+    "eyebrow": "02 — Our Honeys",
+    "title": "Our Honeys",
+    "intro": "Two monofloral honeys from a single territory, each with its own botanical and sensory identity.",
+    "labels": {
+      "species": "Botanical species",
+      "flowering": "Flowering season",
+      "origin": "Origin",
+      "sensory": "Sensory profile"
+    },
+    "availability": "Commercial availability subject to confirmation.",
+    "items": [
+      {
+        "id": "ulmo",
+        "name": "Ulmo Honey",
+        "tree": "Ulmo",
+        "species": "Eucryphia cordifolia [PENDING: validate through melissopalynological analysis]",
+        "flowering": "[PENDING: confirmed flowering months in Caramávida]",
+        "origin": "Caramávida, Nahuelbuta range, Arauco Province, Chile",
+        "sensory": "[PENDING: validated sensory profile — colour, aroma, flavour and texture]",
+        "description": "[PENDING: short introduction to Ulmo honey]",
+        "imageAlt": "Example image: honeybee on an ulmo flower"
+      },
+      {
+        "id": "tineo",
+        "name": "Tineo Honey",
+        "tree": "Tineo",
+        "species": "Weinmannia trichosperma [PENDING: validate through melissopalynological analysis]",
+        "flowering": "[PENDING: confirmed flowering months in Caramávida]",
+        "origin": "Caramávida, Nahuelbuta range, Arauco Province, Chile",
+        "sensory": "[PENDING: validated sensory profile — colour, aroma, flavour and texture]",
+        "description": "[PENDING: short introduction to Tineo honey]",
+        "imageAlt": "Example image: tineo flowers"
+      }
+    ]
+  },
+  "science": {
+    "eyebrow": "03 — Science & Quality",
+    "title": "Science & Quality",
+    "intro": "We want the singularity of our honeys to be demonstrated, not just described.",
+    "bioactivityTitle": "What is bioactivity?",
+    "bioactivityText": "In food science, bioactivity refers to the ability of certain compounds to interact with biological systems. In honey, research typically analyses parameters such as phenolic compound content or antioxidant activity in the laboratory. These values depend on each honey's botanical and geographical origin, which is why we measure them rather than assume them.",
+    "researchTitle": "Research with Universidad de La Frontera",
+    "researchText": "Caramávida carries out characterisation studies of its honeys together with Universidad de La Frontera (UFRO), Chile. [PENDING: confirm the formal name of the collaboration, the team or laboratory in charge and the scope of the studies]",
+    "nbi": {
+      "title": "NBI Index",
+      "badge": "Proprietary index in development",
+      "text": "[PENDING: description of the NBI index]. This is a proprietary index currently in development. It is not a standardised scale and is not equivalent to other honey grading scales."
+    },
+    "disclaimer": "The information in this section is for general information purposes and does not constitute a health claim.",
+    "studiesTitle": "Study results",
+    "studyLabels": {
+      "date": "Date",
+      "methodology": "Methodology",
+      "sample": "Sample",
+      "laboratory": "Laboratory",
+      "download": "Download report (PDF)",
+      "downloadUnavailable": "Report not yet available"
+    },
+    "studies": [
+      {
+        "id": "study-ulmo-01",
+        "title": "[PENDING: study title — Ulmo honey]",
+        "date": "[PENDING: date]",
+        "methodology": "[PENDING: methodology]",
+        "sample": "[PENDING: sample and season description]",
+        "laboratory": "[PENDING: responsible laboratory]",
+        "reportUrl": null
+      },
+      {
+        "id": "study-tineo-01",
+        "title": "[PENDING: study title — Tineo honey]",
+        "date": "[PENDING: date]",
+        "methodology": "[PENDING: methodology]",
+        "sample": "[PENDING: sample and season description]",
+        "laboratory": "[PENDING: responsible laboratory]",
+        "reportUrl": null
+      }
+    ]
+  },
+  "story": {
+    "eyebrow": "04 — Our Story",
+    "title": "Our Story",
+    "intro": "Bosques y Praderas is the company behind Caramávida. [PENDING: company origin, founding year and motivation]",
+    "blocks": [
+      {
+        "title": "The people",
+        "text": "[PENDING: who makes up the team and the beekeeping families involved]"
+      },
+      {
+        "title": "The craft of beekeeping",
+        "text": "[PENDING: how beekeeping is practised in Caramávida — seasons, harvest and extraction]"
+      },
+      {
+        "title": "Management practices",
+        "text": "[PENDING: hive and environmental management practices. Mention certifications only if current and verified]"
+      },
+      {
+        "title": "Bosques y Praderas and Caramávida",
+        "text": "[PENDING: the company's relationship with the Caramávida territory]"
+      }
+    ],
+    "galleryTitle": "Documentary record",
+    "gallery": [
+      "Example image: beekeeper inspecting a hive",
+      "Example image: ulmo flowers",
+      "Example image: tineo foliage",
+      "Example image: araucaria trees in the Nahuelbuta range",
+      "Example image: uncapping a honey frame",
+      "Example image: comb with capped honey"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "05 — Trade & Partnerships",
+    "title": "International Partnerships",
+    "intro": "We are looking for importers, distributors and agents who value origin, authenticity and evidence.",
+    "valueTitle": "Value proposition",
+    "value": [
+      {
+        "title": "Defined origin",
+        "text": "Honeys from a specific territory: Caramávida, Nahuelbuta range. [PENDING: traceability system details]"
+      },
+      {
+        "title": "Botanical differentiation",
+        "text": "Ulmo and Tineo, two species native to southern Chile."
+      },
+      {
+        "title": "Ongoing research",
+        "text": "Characterisation of our honeys in collaboration with Universidad de La Frontera."
+      },
+      {
+        "title": "Direct relationship",
+        "text": "Work directly with the producer, without unnecessary intermediaries."
+      }
+    ],
+    "formatsTitle": "Formats",
+    "formats": [
+      "[PENDING: bulk format]",
+      "[PENDING: retail format]",
+      "[PENDING: other formats — food service, samples]"
+    ],
+    "marketsTitle": "Markets of interest",
+    "markets": [
+      "European Union",
+      "[PENDING: other priority markets]"
+    ]
+  },
+  "contact": {
+    "title": "Let's talk partnership",
+    "intro": "Fill in the form and our sales team will get back to you. You can also request our trade dossier.",
+    "requiredNote": "Fields marked with * are required.",
+    "fields": {
+      "inquiryType": "Reason for contact",
+      "name": "Full name",
+      "company": "Company",
+      "country": "Country",
+      "email": "Business email",
+      "businessType": "Type of business",
+      "interest": "Interest",
+      "volume": "Estimated volume (optional)",
+      "volumeHint": "For example: kg or tonnes per year.",
+      "message": "Message",
+      "consent": "I agree to my data being processed to respond to this request, in accordance with the privacy policy.",
+      "privacyLink": "View privacy policy",
+      "honeypot": "Leave this field empty"
+    },
+    "selectPlaceholder": "Select an option",
+    "inquiryTypes": {
+      "dossier": "Request trade dossier",
+      "distribution": "Distribution or import",
+      "samples": "Request samples",
+      "other": "Other"
+    },
+    "businessTypes": {
+      "importer": "Importer",
+      "distributor": "Distributor",
+      "agent": "Sales agent",
+      "retail": "Specialty retail",
+      "foodservice": "Food service / HoReCa",
+      "other": "Other"
+    },
+    "interests": {
+      "ulmo": "Ulmo",
+      "tineo": "Tineo",
+      "both": "Both"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "email": "Please enter a valid email address.",
+      "corporateEmail": "Please use a business email address (not a free email provider).",
+      "minlength": "This text is too short.",
+      "maxlength": "This text is too long.",
+      "consent": "You must accept the privacy policy to continue.",
+      "summary": "Please review the highlighted fields to continue.",
+      "submit": "We couldn't send your request. Please try again or email us."
+    },
+    "submit": "Send request",
+    "sending": "Sending…",
+    "success": {
+      "title": "Thank you for your interest",
+      "text": "We have received your request. Our sales team will get back to you shortly.",
+      "again": "Send another request"
+    },
+    "mailtoLabel": "Prefer your email client?",
+    "mailtoLink": "Send these details by email",
+    "mailtoSubject": "Caramávida trade enquiry"
+  },
+  "footer": {
+    "tagline": "Ulmo and Tineo honeys from the native forests of Nahuelbuta, Chile.",
+    "contactTitle": "Company contact",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "sectionsTitle": "Sections",
+    "languageTitle": "Language",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved."
+  }
+}
